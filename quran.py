@@ -122,11 +122,10 @@ st.write("[Surah No :114 - Surah An Naas - By Sheikh Abdur Rahman As Sudais](htt
 
 
 
-# Title of the app
-st.title("View & Read the Quran PDF")
-# URL of the hosted PDF file
-pdf_url = "https://media.islamicity.org/wp-content/uploads/quran/arabic-quran-white.pdf"
+st.title("View & Read the Quran")
 
-# Embed the PDF using the object HTML tag
-st.markdown(f'<object data="{pdf_url}" type="application/pdf" width="700" height="900"></object>', unsafe_allow_html=True)
+# URL of the hosted webpage
+webpage_url = "https://www.islamicnet.com/quran.php"
 
+# Embed the webpage using the iframe HTML tag
+st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
