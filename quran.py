@@ -2,6 +2,15 @@ import streamlit as st
 st.write('''From Umar \n
 Contact: mohammed60413@outlook.com''')
 st.markdown("<h1 style='text-align: center;'> Islamic Resource Center </h1>", unsafe_allow_html=True)
+
+st.title("View & Read the Quran")
+
+# URL of the hosted webpage
+webpage_url = "https://www.islamicnet.com/quran.php"
+
+# Embed the webpage using the iframe HTML tag
+st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+
 st.write('Full Quran Recitation Videos')
 #st.video("https://youtu.be/GsYPqOPpk1o?feature=shared")
 st.write("[Surah No 1 : Surah Fathihah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u1nqafqyqTA?feature=shared)")
@@ -122,10 +131,3 @@ st.write("[Surah No :114 - Surah An Naas - By Sheikh Abdur Rahman As Sudais](htt
 
 
 
-st.title("View & Read the Quran")
-
-# URL of the hosted webpage
-webpage_url = "https://www.islamicnet.com/quran.php"
-
-# Embed the webpage using the iframe HTML tag
-st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
