@@ -4,8 +4,8 @@ Contact: mohammedumar60413@outlook.com''')
 
 
 st.title("Quran MP3 Files")
-webpage_urly = 'https://quranicaudio.com/'
-st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+webpage_url = 'https://quranicaudio.com/'
+st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
 st.title('Full Quran Recitation Videos')
@@ -125,6 +125,6 @@ st.write("[Surah No :113 - Surah Falak - By Sheikh Abdur Rahman As Sudais](https
 st.write("[Surah No :114 - Surah An Naas - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ZIUSO7aAJPY?feature=shared)")
 
 st.title("View & Read the Quran PDF")
-pdf_url = "https://www.islamicnet.com/quran.php"
-st.markdown(f'<object data="{pdf_url}" type="application/pdf" width="700" height="900"></object>', unsafe_allow_html=True)
+webpage_urly = 'https://www.islamicnet.com/quran.php'
+st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
