@@ -4,14 +4,14 @@ Contact: mohammedumar60413@outlook.com''')
 
 
 st.title("View & Read the Quran PDF")
-pdf_url = "https://media.islamicity.org/wp-content/uploads/quran/arabic-quran-white.pdf"
+pdf_url = "https://www.islamicnet.com/quran.php"
 st.markdown(f'<object data="{pdf_url}" type="application/pdf" width="700" height="900"></object>', unsafe_allow_html=True)
 
-#st.write("===============================================================================================================")
+st.write("===============================================================================================================")
 
-#st.title("Quran MP3 Files")
-#webpage_urly = 'https://quranicaudio.com/'
-#st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+st.title("Quran MP3 Files")
+webpage_urly = 'https://quranicaudio.com/'
+st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
 st.title('Full Quran Recitation Videos')
