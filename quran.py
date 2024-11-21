@@ -11,10 +11,12 @@ webpage_url = "https://www.islamicnet.com/quran.php"
 # Embed the webpage using the iframe HTML tag
 st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
-st.write('Full Quran Recitation Videos')
-#st.video("https://youtu.be/GsYPqOPpk1o?feature=shared")
-st.write("[Surah No 1 : Surah Fathihah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u1nqafqyqTA?feature=shared)")
+st.title("Quran MP3 files")
+webpage_url1='https://qurancentral.com/?gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJKghfKKr1HhP9b7u9Am55s3VLxNW02UQP2o8m0q2Wgwjp6tBuUl3IaAiofEALw_wcB'
+st.markdown(f'<iframe src="{webpage_url1}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
+st.write('# Full Quran Recitation Videos')
+st.write("[Surah No 1 : Surah Fathihah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u1nqafqyqTA?feature=shared)")
 st.write("[Surah No 2 : Surah Al Baqrah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/nibOG3vRGpU?feature=shared)")
 st.write("[Surah No 3 : Surah Al Imran - By Sheikh Abdur Rahman As Sudais ](https://youtu.be/tf26W_1mdFg?feature=shared)")
 st.write("[Surah No 4 : Surah An Nisa - By Sheikh Abdur Rahman As Sudais](https://youtu.be/G0NqWjlXlQE?feature=shared)")
