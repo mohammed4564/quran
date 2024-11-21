@@ -7,7 +7,7 @@ st.title("View & Read the Quran PDF")
 pdf_url = "https://media.islamicity.org/wp-content/uploads/quran/arabic-quran-white.pdf"
 st.markdown(f'<object data="{pdf_url}" type="application/pdf" width="700" height="900"></object>', unsafe_allow_html=True)
 
-st.write("===============================================================================================================")
+#st.write("===============================================================================================================")
 
 #st.title("Quran MP3 Files")
 #webpage_urly = 'https://quranicaudio.com/'
