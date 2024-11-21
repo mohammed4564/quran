@@ -2,9 +2,8 @@ import streamlit as st
 st.write('''From Umar \n
 Contact: mohammedumar60413@outlook.com''')
 st.markdown("<h1 style='text-align: center;'> Islamic Resource Center </h1>", unsafe_allow_html=True)
-
+st.write("                                                                              ")
 st.title("Quran MP3 Files")
-
 # URL of the website to embed
 webpage_urly = 'https://quranicaudio.com/'
 # Embed the webpage using iframe
