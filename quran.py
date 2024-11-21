@@ -2,6 +2,8 @@ import streamlit as st
 st.write('''From Umar \n
 Contact: mohammedumar60413@outlook.com''')
 
+st.title("Islamic Resource Center")
+
 st.title("View & Read the Quran PDF")
 webpage_urly = 'https://www.islamicnet.com/quran.php'
 st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
