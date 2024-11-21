@@ -1,6 +1,6 @@
 import streamlit as st
 st.write('''From Umar \n
-Contact: mohammed60413@outlook.com''')
+Contact: mohammedumar60413@outlook.com''')
 st.markdown("<h1 style='text-align: center;'> Islamic Resource Center </h1>", unsafe_allow_html=True)
 
 st.title("View & Read the Quran")
