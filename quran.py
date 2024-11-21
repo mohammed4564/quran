@@ -11,8 +11,11 @@ webpage_url = "https://www.islamicnet.com/quran.php"
 # Embed the webpage using the iframe HTML tag
 st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
-st.title("Quran MP3 files")
-webpage_url1='https://qurancentral.com/?gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJKghfKKr1HhP9b7u9Am55s3VLxNW02UQP2o8m0q2Wgwjp6tBuUl3IaAiofEALw_wcB'
+st.title("Quran MP3 Files")
+
+# URL of the webpage to embed
+webpage_url1 = 'https://qurancentral.com/?gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJKghfKKr1HhP9b7u9Am55s3VLxNW02UQP2o8m0q2Wgwjp6tBuUl3IaAiofEALw_wcB.php'
+# Embed the webpage using iframe
 st.markdown(f'<iframe src="{webpage_url1}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 st.write('# Full Quran Recitation Videos')
