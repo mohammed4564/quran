@@ -2,6 +2,9 @@ import streamlit as st
 st.write('''From Umar \n
 Contact: mohammedumar60413@outlook.com''')
 
+st.title("View & Read the Quran PDF")
+webpage_urly = 'https://www.islamicnet.com/quran.php'
+st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 st.title("Quran MP3 Files")
 webpage_url = 'https://quranicaudio.com/'
@@ -124,7 +127,5 @@ st.write("[Surah No :112 - Surah Iqlas - By Sheikh Abdur Rahman As Sudais](https
 st.write("[Surah No :113 - Surah Falak - By Sheikh Abdur Rahman As Sudais](https://youtu.be/gUtD5O5AmaQ?feature=shared)")
 st.write("[Surah No :114 - Surah An Naas - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ZIUSO7aAJPY?feature=shared)")
 
-st.title("View & Read the Quran PDF")
-webpage_urly = 'https://www.islamicnet.com/quran.php'
-st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+
 
