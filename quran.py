@@ -14,7 +14,7 @@ st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', u
 st.title("Quran MP3 Files")
 
 # URL of the webpage to embed
-webpage_url1 = 'https://qurancentral.com/?gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJKghfKKr1HhP9b7u9Am55s3VLxNW02UQP2o8m0q2Wgwjp6tBuUl3IaAiofEALw_wcB.php'
+webpage_url1 = 'https://qurancentral.com/?gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJKghfKKr1HhP9b7u9Am55s3VLxNW02UQP2o8m0q2Wgwjp6tBuUl3IaAiofEALw_wcB'
 # Embed the webpage using iframe
 st.markdown(f'<iframe src="{webpage_url1}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
