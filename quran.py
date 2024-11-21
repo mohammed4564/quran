@@ -7,7 +7,7 @@ st.title("Quran MP3 Files")
 # URL of the website to embed
 webpage_urly = 'https://quranicaudio.com/'
 # Embed the webpage using iframe
-st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+#st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
 st.title('Full Quran Recitation Videos')
