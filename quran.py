@@ -1,12 +1,16 @@
 import streamlit as st
 st.write('''From Umar \n
 Contact: mohammedumar60413@outlook.com''')
-st.markdown("<h1 style='text-align: center;'> Islamic Resource Center </h1>", unsafe_allow_html=True)
-st.write("                                                                              ")
+
+
+st.title("View & Read the Quran PDF")
+pdf_url = "https://media.islamicity.org/wp-content/uploads/quran/arabic-quran-white.pdf"
+st.markdown(f'<object data="{pdf_url}" type="application/pdf" width="700" height="900"></object>', unsafe_allow_html=True)
+
+st.write("===============================================================================================================")
+
 st.title("Quran MP3 Files")
-# URL of the website to embed
 webpage_urly = 'https://quranicaudio.com/'
-# Embed the webpage using iframe
 #st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
