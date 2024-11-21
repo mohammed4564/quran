@@ -14,12 +14,12 @@ st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', u
 st.title("Quran MP3 Files")
 
 # URL of the website to embed
-webpage_url1 = 'https://qurancentral.com/?gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJKghfKKr1HhP9b7u9Am55s3VLxNW02UQP2o8m0q2Wgwjp6tBuUl3IaAiofEALw_wcB'
+webpage_url1 = 'https://quranicaudio.com/'
 
 # Embed the webpage using iframe
 st.markdown(f'<iframe src="{webpage_url1}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
-st.write('# Full Quran Recitation Videos')
+st.title('Full Quran Recitation Videos')
 st.write("[Surah No 1 : Surah Fathihah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u1nqafqyqTA?feature=shared)")
 st.write("[Surah No 2 : Surah Al Baqrah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/nibOG3vRGpU?feature=shared)")
 st.write("[Surah No 3 : Surah Al Imran - By Sheikh Abdur Rahman As Sudais ](https://youtu.be/tf26W_1mdFg?feature=shared)")
