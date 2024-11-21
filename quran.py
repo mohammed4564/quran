@@ -12,10 +12,8 @@ webpage_url = "https://www.islamicnet.com/quran.php"
 st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 st.title("Quran MP3 Files")
-
 # URL of the website to embed
 webpage_url1 = 'https://quranicaudio.com/'
-
 # Embed the webpage using iframe
 st.markdown(f'<iframe src="{webpage_url1}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
