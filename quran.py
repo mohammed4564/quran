@@ -9,8 +9,8 @@ st.markdown(f'<object data="{pdf_url}" type="application/pdf" width="700" height
 
 st.write("===============================================================================================================")
 
-st.title("Quran MP3 Files")
-webpage_urly = 'https://quranicaudio.com/'
+#st.title("Quran MP3 Files")
+#webpage_urly = 'https://quranicaudio.com/'
 #st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
