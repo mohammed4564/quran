@@ -1,6 +1,10 @@
 import streamlit as st
-st.write('''From Umar \n
-Contact: mohammedumar60413@outlook.com''')
+st.write(''' The **Quran** is the holy book of Islam, considered by Muslims to be the literal word of God revealed to Prophet Muhammad (PBUH) over 23 years, 
+starting in 610 CE. It is written in Arabic and consists of 114 chapters (**Surahs**) and over 6,000 verses (**Ayahs**). The Quran covers a range of topics, 
+including **theology**, **morality**, **laws**, and **guidance** for personal conduct. It emphasizes the oneness of God (Tawhid), 
+the **finality of Prophet Muhammad**, the **Day of Judgment**, and moral values such as **justice**, **compassion**, and **patience**.
+Muslims believe the Quran has been perfectly preserved and remains unchanged since its revelation.It is recited during prayers (**Salah**) and is a key source
+of spiritual guidance. The Quran’s eloquent language has deeply influenced Arabic literature and culture,and it is considered the ultimate guide for all aspects of a Muslim's life.''')
 
 st.title("Islamic Resource Center")
 
