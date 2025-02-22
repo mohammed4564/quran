@@ -293,12 +293,13 @@ st.markdown("""
 # Displaying the header with the title
 st.markdown('<div class="title">Download Quran Paras</div>', unsafe_allow_html=True)
 
-# Creating a list of dictionaries with Sl. No, Para Name, and Download Button URL
+# Creating a list of dictionaries with Para Name and Download Button URL, without index number
 data = []
-for idx, para in enumerate(pdf_files, start=1):
+for para in pdf_files:
     para_name = f"{para['name']} ({para['arabic_name']})"
     download_url = f"{github_repo_url}{para['file']}"
-    data.append({"Sl. No": idx, "Para Name": para_name, "Download PDF": f"[Download]({download_url})"})
+    # Add the PDF icon to the download button
+    data.append({"Para Name": para_name, "Download PDF": f"📄 [Download]({download_url})"})
 
 # Converting to DataFrame for better table representation
 df = pd.DataFrame(data)
