@@ -59,7 +59,13 @@ webpage_url = 'https://quranicaudio.com/'
 st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
-st.write('Full Quran Recitation Videos')
+# Styling the text
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
+        Full <span style="color: #8e44ad;">Quran</span> Recitation <span style="color: #f39c12;">Videos</span>
+    </p>
+""", unsafe_allow_html=True)
+
 st.write("[Surah No 1 : Surah Fathihah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u1nqafqyqTA?feature=shared)")
 st.write("[Surah No 2 : Surah Al Baqrah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/nibOG3vRGpU?feature=shared)")
 st.write("[Surah No 3 : Surah Al Imran - By Sheikh Abdur Rahman As Sudais ](https://youtu.be/tf26W_1mdFg?feature=shared)")
