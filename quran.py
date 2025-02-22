@@ -66,121 +66,152 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-st.write("[Surah No 1 : Surah Fathihah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u1nqafqyqTA?feature=shared)")
-st.write("[Surah No 2 : Surah Al Baqrah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/nibOG3vRGpU?feature=shared)")
-st.write("[Surah No 3 : Surah Al Imran - By Sheikh Abdur Rahman As Sudais ](https://youtu.be/tf26W_1mdFg?feature=shared)")
-st.write("[Surah No 4 : Surah An Nisa - By Sheikh Abdur Rahman As Sudais](https://youtu.be/G0NqWjlXlQE?feature=shared)")
-st.write("[Surah No 5 : Surah Al Maaidah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/EFgAy0OP7CM?feature=shared)")
-st.write("[Surah No 6 : Surah Al An Aam - By Sheikh Abdur Rahman As Sudais](https://youtu.be/RKXrMg14DaU?feature=shared)")
-st.write("[Surah No 7 : Surah Al Araaf - By Sheikh Abdur Rahman As Sudais](https://youtu.be/GxDjbom4nIg?feature=shared)")
-st.write("[Surah No 8 : Surah Al Anfal - By Sheikh Abdur Rahman As Sudais](https://youtu.be/tIoCEBUmrQU?feature=shared)")
-st.write("[Surah No 9 : Surah At Thubah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/4RoQ_FkdH_c?feature=shared)")
-st.write("[Surah No 10 : Surah Yunus - By Sheikh Abdur Rahman As Sudais](https://youtu.be/YkG3XTG1pJM?feature=shared)")
-st.write("[Surah No 11 : Surah Hud - By Sheikh Abdur Rahman As Sudais](https://youtu.be/EIFJ43WBuVo?feature=shared)")
-st.write("[Surah No 12 : Surah Yusuf - By Sheikh Abdur Rahman As Sudais](https://youtu.be/URVroBsLsl4?feature=shared)")
-st.write("[Surah No 13 : Surah Ar Raad - By Sheikh Abdur Rahman As Sudais](https://youtu.be/v7zVkvzh4S8?feature=shared)")
-st.write("[Surah No 14 : Surah Ibrahim - By Sheikh Abdur Rahman As Sudais](https://youtu.be/-0A1Uy_3BqE?feature=shared)")
-st.write("[Surah No 15 : Surah Al Hijr - By Sheikh Abdur Rahman As Sudais](https://youtu.be/WslQRNymzYw?feature=shared)")
-st.write("[Surah No 16 : Surah An Nahl - By Sheikh Abdur Rahman As Sudais](https://youtu.be/QHjmot_zB3M?feature=shared)")
-st.write("[Surah No 17 : Surah Israh - By Sheikh Abdur Rahman As Sudais](https://youtu.be/xnc9HL6o5yQ?feature=shared)")
-st.write("[Surah No 18 : Surah Al Kahf- By Sheikh Abdur Rahman As Sudais](https://youtu.be/znuTS6Q96Vs?feature=shared)")
-st.write("[Surah No 19 : Surah Maryam - By Sheikh Abdur Rahman As Sudais](https://youtu.be/JaeLTXaOmiU?feature=shared)")
-st.write("[Surah No 20 : Surah Taha - By Sheikh Abdur Rahman As Sudais](https://youtu.be/P99qEmtNSqo?feature=shared)")
-st.write("[Surah No 21 : Surah Al Anbiya - By Sheikh Abdur Rahman As Sudais](https://youtu.be/v_DfkRPS-Ak?feature=shared)")
-st.write("[Surah No 22: Surah Al Hajj- By Sheikh Abdur Rahman As Sudais](https://youtu.be/e4a3p8TgUw0?feature=shared)")
-st.write("[Surah No 23 : Surah Al Muminun- By Sheikh Abdur Rahman As Sudais](https://youtu.be/l7k51vBeLD8?feature=shared)")
-st.write("[Surah No 24: Surah An Nur - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ezWh_uABBzQ?feature=shared)")
-st.write("[Surah No 25 : Surah Al Furqan- By Sheikh Abdur Rahman As Sudais](https://youtu.be/btl5ytL8_Fk?feature=shared)")
-st.write("[Surah No 26 : Surah Ash Shuara - By Sheikh Abdur Rahman As Sudais](https://youtu.be/SrtlaNMRRw4?feature=shared)")
-st.write("[Surah No 27 : Surah An Naml - By Sheikh Abdur Rahman As Sudais](https://youtu.be/q8vS7jzIph4?feature=shared)")
-st.write("[Surah No 28: Surah Al Qasas- By Sheikh Abdur Rahman As Sudaisc](https://youtu.be/zUEzIrYc2eI?feature=shared)")
-st.write("[Surah No 29: Surah Al Ankabut - By Sheikh Abdur Rahman As Sudais](https://youtu.be/mMYP6kuTSx0?feature=shared)")
-st.write("[Surah No 30 : Surah Ar Rum- By Sheikh Abdur Rahman As Sudais](https://youtu.be/22bWGmjtE9Y?feature=shared)")
-st.write("[Surah No 31 : Surah Luqman - By Sheikh Abdur Rahman As Sudais](https://youtu.be/BSvQ9LQ78Cs?feature=shared)")
-st.write("[Surah No 32 : Surah As Sajdah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/CiQIHvku7nU?feature=shared)")
-st.write("[Surah No 33 : Surah Al Ahzab - By Sheikh Abdur Rahman As Sudais](https://youtu.be/u8S2zJpprZI?feature=shared)")
-st.write("[Surah No 34 : Surah Saba - By Sheikh Abdur Rahman As Sudais](https://youtu.be/lTTAFbgmJe0?feature=shared)")
-st.write("[Surah No 35 : Surah Fathir - By Sheikh Abdur Rahman As Sudais](https://youtu.be/389WDzOLksA?feature=shared)")
-st.write("[Surah No 36 : Surah Yaseen - By Sheikh Abdur Rahman As Sudais](https://youtu.be/emousr_FIHI?feature=shared)")
-st.write("[Surah No 37: Surah As Saffat - By Sheikh Abdur Rahman As Sudais](https://youtu.be/WiRy0sl7JZ8?feature=shared)")
-st.write("[Surah No 38 : Surah Saad - By Sheikh Abdur Rahman As Sudais](https://youtu.be/PBFKqO56c-4?feature=shared)")
-st.write("[Surah No 39 : Surah Az Zumar - By Sheikh Abdur Rahman As Sudais](https://youtu.be/1yGVVFet_BI?feature=shared)")
-st.write("[Surah No 40 : Surah Ghafir - By Sheikh Abdur Rahman As Sudais](https://youtu.be/SFLaFHI7Kww?feature=shared)")
-st.write("[Surah No 41 : Surah Fussilat - By Sheikh Abdur Rahman As Sudais](https://youtu.be/wuji4xmdOEw?feature=shared)")
-st.write("[Surah No 42 : Surah Ash Shurah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/cmIwH5ar_7M?feature=shared)")
-st.write("[Surah No 43 : Surah Az Zukhruf - By Sheikh Abdur Rahman As Sudais](https://youtu.be/4iGCJI4xZrg?feature=shared)")
-st.write("[Surah No 44 : Surah Ad Dukhan - By Sheikh Abdur Rahman As Sudais](https://youtu.be/uSXcJmiSsTo?feature=shared)")
-st.write("[Surah No 45 : Surah Jathiyah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/2AkyfRIR5lw?feature=shared)")
-st.write("[Surah No 46 : Surah Ahqaaf - By Sheikh Abdur Rahman As Sudais](https://youtu.be/RkP5RDTfhEo?feature=shared)")
-st.write("[Surah No 47 : Surah Muhammad - By Sheikh Abdur Rahman As Sudais](https://youtu.be/F7gqhhxkUJ8?feature=shared)")
-st.write("[Surah No 48: Surah Al Fath - By Sheikh Abdur Rahman As Sudais](https://youtu.be/wr8TDXjA8kw?feature=shared)")
-st.write("[Surah No 49 : Surah Al Hujurat - By Sheikh Abdur Rahman As Sudais](https://youtu.be/Hkf4UCVC_yU?feature=shared)")
-st.write("[Surah No :50 - Surah Qaaf- By Sheikh Abdur Rahman As Sudais](https://youtu.be/oxMD-BX3IXE?feature=shared)")
-st.write("[Surah No 51 : Surah Dhariyath - By Sheikh Abdur Rahman As Sudais](https://youtu.be/6TexBrmYc70?feature=shared)")
-st.write("[Surah No 52 : Surah Ath Thoor - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ykjOEXwxhOI?feature=shared)")
-st.write("[Surah No 53 : Surah Najm - By Sheikh Abdur Rahman As Sudais](https://youtu.be/H_vEYQ4wuDQ?feature=shared)")
-st.write("[Surah No 54 : Surah Qamar - By Sheikh Abdur Rahman As Sudais](https://youtu.be/BbrtnTvKePo?feature=shared)")
-st.write("[Surah No 55 : Surah Ar Rahmaan - By Sheikh Abdur Rahman As Sudais](https://youtu.be/muhKlnac-i0?feature=shared)")
-st.write("[Surah No 56 : Surah Waqiah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/aubS8TecslU?feature=shared)")
-st.write("[Surah No 57 : Surah Hadeed - By Sheikh Abdur Rahman As Sudais](https://youtu.be/bAy8IZsfhm0?feature=shared)")
-st.write("[Surah No 58 : Surah Mujadhala - By Sheikh Abdur Rahman As Sudais](https://youtu.be/BM_r_xgjj_8?feature=shared)")
-st.write("[Surah No 59 : Surah Hashr - By Sheikh Abdur Rahman As Sudais](https://youtu.be/Rdhva9_0p4o?feature=shared)")
-st.write("[Surah No 60 : Surah Mumtahanah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/DdtiCjO2N-g?feature=shared)")
-st.write("[Surah No 61 : Surah As Saf - By Sheikh Abdur Rahman As Sudais](https://youtu.be/shU3cHdOSkg?feature=shared)")
-st.write("[Surah No 62 : Surah Jum Ah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/cW7XmILB4II?feature=shared)")
-st.write("[Surah No 63 : Surah Munafiqoon - By Sheikh Abdur Rahman As Sudais](https://youtu.be/oagkbDU8m5I?feature=shared)")
-st.write("[Surah No 64 : Surah Tahaabun - By Sheikh Abdur Rahman As Sudais](https://youtu.be/LlUYSVq4zlA?feature=shared)")
-st.write("[Surah No 65 : Surah Thalaaq - By Sheikh Abdur Rahman As Sudais](https://youtu.be/xOoC0SV27_4?feature=shared)")
-st.write("[Surah No 66 : Surah Thahreem - By Sheikh Abdur Rahman As Sudais](https://youtu.be/Bo4vM6_HltM?feature=shared)")
-st.write("[Surah No 67 : Surah Mulk - By Sheikh Abdur Rahman As Sudais](https://youtu.be/q6EWyyplP9o?feature=shared)")
-st.write("[Surah No 68 : Surah Qalam - By Sheikh Abdur Rahman As Sudais](https://youtu.be/QCM3pcnlhPo?feature=shared)")
-st.write("[Surah No 69 : Surah Haaqqa - By Sheikh Abdur Rahman As Sudais](https://youtu.be/62RIS_q4FZo?feature=shared)")
-st.write("[Surah No 70 : Surah Maarij - By Sheikh Abdur Rahman As Sudais](https://youtu.be/l7_5T6_WQ7s?feature=shared)")
-st.write("[Surah No : 71 - Sharh Nooh - By Sheikh Abdur Rahman As Sudais](https://youtu.be/GRJoa7xY1Tc?feature=shared)")
-st.write("[Surah No : 72 - Sharh Al Jinn - By Sheikh Abdur Rahman As Sudais](https://youtu.be/Sfkyz_gGkXw?feature=shared)")
-st.write("[Surah No : 73 - Sharh Muzammil - By Sheikh Abdur Rahman As Sudais](https://youtu.be/b5Tq2g6ynq4?feature=shared)")
-st.write("[Surah No : 74 - Sharh Muddaththir - By Sheikh Abdur Rahman As Sudais](https://youtu.be/E_ZaCciNn54?feature=shared)")
-st.write("[Surah No : 75 - Sharh Qiyama - By Sheikh Abdur Rahman As Sudais](https://youtu.be/gGW5LuQghGk?feature=shared)")
-st.write("[Surah No : 76 - Sharh Ath Thahr- By Sheikh Abdur Rahman As Sudais](https://youtu.be/TLEuyKG2buM?feature=shared)")
-st.write("[Surah No : 77 - Sharh Mursalat - By Sheikh Abdur Rahman As Sudais](https://youtu.be/MDHz8PpAiyA?feature=sharedv)")
-st.write("[Surah No : 78 - Sharh Naba - By Sheikh Abdur Rahman As Sudais](https://youtu.be/M_jrwXBOl1M?feature=shared)")
-st.write("[Surah No : 79 - Sharh Naziath - By Sheikh Abdur Rahman As Sudais](https://youtu.be/XudZNuxm5zk?feature=shared)")
-st.write("[Surah No : 80 - Sharh Abasa - By Sheikh Abdur Rahman As Sudais](https://youtu.be/9a5-TxG5GRs?feature=shared)")
-st.write("[Surah No 81 : Surah At Takwir - By Sheikh Abdur Rahman As Sudais](https://youtu.be/gNQd6FQLsvQ?feature=shared)")
-st.write("[Surah No 82 : Surah Infitar - By Sheikh Abdur Rahman As Sudais](https://youtu.be/8LosxlqhaTk?feature=shared)")
-st.write("[Surah No 83 : Surah Al Mutaffifin - By Sheikh Abdur Rahman As Sudais](https://youtu.be/VFAxRV9a-w0?feature=shared)")
-st.write("[Surah No : 84 - Sharh Inshiqaaq - By Sheikh Abdur Rahman As Sudais](https://youtu.be/p_in_GR-neY?feature=shared)")
-st.write("[Surah No : 85 - Sharh Al Burooj - By Sheikh Abdur Rahman As Sudais](https://youtu.be/gwKC9W18TrA?feature=shared)")
-st.write("[Surah No : 86 - Sharh Ath Thariq - By Sheikh Abdur Rahman As Sudais](https://youtu.be/wEOZsvLyS74?feature=shared)")
-st.write("[Surah No : 87 - Ala - By Sheikh Abdur Rahman As Sudais](https://youtu.be/pHUWDzMRZW8?feature=shared)")
-st.write("[Surah No : 88 - Ghashiyah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/mfuCi8alrb8?feature=shared)")
-st.write("[Surah No : 89 - Fajr - By Sheikh Abdur Rahman As Sudais](https://youtu.be/eKZ38VYtHuI?feature=shared)")
-st.write("[Surah No : 90 - Sharh Al Balad - By Sheikh Abdur Rahman As Sudais](https://youtu.be/FsdfNGIBIYs?feature=shared)")
-st.write("[Surah No : 91 - Shams - By Sheikh Abdur Rahman As Sudais](https://youtu.be/bGqmBo9rcs4?feature=shared)")
-st.write("[Surah No : 92 - Sharh Al Lail - By Sheikh Abdur Rahman As Sudais](https://youtu.be/AH1mYJTLOwo?feature=shared)")
-st.write("[Surah No : 93 - Dhuha - By Sheikh Abdur Rahman As Sudais](https://youtu.be/cqMI5RCBivg?feature=shared)")
-st.write("[Surah No : 94 - Sharh - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ZMpZhlGFfME?feature=shared)")
-st.write("[Surah No : 95 - At Thin- By Sheikh Abdur Rahman As Sudais](https://youtu.be/4tgptyV-CQA?feature=shared)")
-st.write("[Surah No : 96 - Alaq - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ElrBVCDj9mk?feature=shared)")
-st.write("[Surah No : 97- Qadr - By Sheikh Abdur Rahman As Sudais](https://youtu.be/0fNYbCjcJ9o?feature=shared)")
-st.write("[Surah No : 98 - Bayyina - By Sheikh Abdur Rahman As Sudais](https://youtu.be/rlXOFhcbE6M?feature=shared)")
-st.write("[Surah No : 99 - Zalzalah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/nOaLcB4KliM?feature=shared)")
-st.write("[Surah No 100 : Surah Al Adiyat - By Sheikh Abdur Rahman As Sudais](https://youtu.be/lIJwwgBt0xQ?feature=shared)")
-st.write("[Surah No :101 - Surah Qaria - By Sheikh Abdur Rahman As Sudais](https://youtu.be/0VauU7RJ0J8?feature=shared)")
-st.write("[Surah No :102 - SurahTakathur - By Sheikh Abdur Rahman As Sudais](https://youtu.be/tvFyrElP75I?feature=shared)")
-st.write("[Surah No : 103 - Al Asr - By Sheikh Abdur Rahman As Sudais](https://youtu.be/Jq99D7AV8VU?feature=shared)")
-st.write("[Surah No :104 - Surah Humazah - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ycDTGWBNVGs?feature=shared)")
-st.write("[Surah No :105 - Surah Fil - By Sheikh Abdur Rahman As Sudais](https://youtu.be/lrzYf_DEYPI?feature=shared)")
-st.write("[Surah No :106 - Surah Quraish - By Sheikh Abdur Rahman As Sudais](https://youtu.be/2f5cwqnCT8Q?feature=shared)")
-st.write("[Surah No :107 - Surah Maaun - By Sheikh Abdur Rahman As Sudais](https://youtu.be/T3pEGIbC2Bc?feature=shared)")
-st.write("[Surah No :108 - Surah Kauthar - By Sheikh Abdur Rahman As Sudais](https://youtu.be/FqHigXI9Ucw?feature=shared)")
-st.write("[Surah No :109 - Surah Kafiroon - By Sheikh Abdur Rahman As Sudais](https://youtu.be/D1g4BLIjTes?feature=shared)")
-st.write("[Surah No :110 - Surah Nasr - By Sheikh Abdur Rahman As Sudais](https://youtu.be/VItrsgKSj6Q?feature=shared)")
-st.write("[Surah No :111 - Surah Masad - By Sheikh Abdur Rahman As Sudais](https://youtu.be/Si5LoKGkxzE?feature=shared)")
-st.write("[Surah No :112 - Surah Iqlas - By Sheikh Abdur Rahman As Sudais](https://youtu.be/dtnhtsbaFG8?feature=shared)")
-st.write("[Surah No :113 - Surah Falak - By Sheikh Abdur Rahman As Sudais](https://youtu.be/gUtD5O5AmaQ?feature=shared)")
-st.write("[Surah No :114 - Surah An Naas - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ZIUSO7aAJPY?feature=shared)")
+# CSS to center-align the table and apply some styling
+st.markdown("""
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
+# Table with all 114 links
+st.write("""
+    <table>
+        <tr><th>Surah Number</th><th>Surah Name</th><th>Link</th></tr>
+        <tr><td>1</td><td>Surah Fathihah</td><td><a href="https://youtu.be/u1nqafqyqTA?feature=shared">Watch</a></td></tr>
+        <tr><td>2</td><td>Surah Al Baqrah</td><td><a href="https://youtu.be/nibOG3vRGpU?feature=shared">Watch</a></td></tr>
+        <tr><td>3</td><td>Surah Al Imran</td><td><a href="https://youtu.be/tf26W_1mdFg?feature=shared">Watch</a></td></tr>
+        <tr><td>4</td><td>Surah An Nisa</td><td><a href="https://youtu.be/G0NqWjlXlQE?feature=shared">Watch</a></td></tr>
+        <tr><td>5</td><td>Surah Al Maaidah</td><td><a href="https://youtu.be/EFgAy0OP7CM?feature=shared">Watch</a></td></tr>
+        <tr><td>6</td><td>Surah Al An Aam</td><td><a href="https://youtu.be/RKXrMg14DaU?feature=shared">Watch</a></td></tr>
+        <tr><td>7</td><td>Surah Al Araaf</td><td><a href="https://youtu.be/GxDjbom4nIg?feature=shared">Watch</a></td></tr>
+        <tr><td>8</td><td>Surah Al Anfal</td><td><a href="https://youtu.be/tIoCEBUmrQU?feature=shared">Watch</a></td></tr>
+        <tr><td>9</td><td>Surah At Thubah</td><td><a href="https://youtu.be/4RoQ_FkdH_c?feature=shared">Watch</a></td></tr>
+        <tr><td>10</td><td>Surah Yunus</td><td><a href="https://youtu.be/YkG3XTG1pJM?feature=shared">Watch</a></td></tr>
+        <tr><td>11</td><td>Surah Hud</td><td><a href="https://youtu.be/EIFJ43WBuVo?feature=shared">Watch</a></td></tr>
+        <tr><td>12</td><td>Surah Yusuf</td><td><a href="https://youtu.be/URVroBsLsl4?feature=shared">Watch</a></td></tr>
+        <tr><td>13</td><td>Surah Ar Raad</td><td><a href="https://youtu.be/v7zVkvzh4S8?feature=shared">Watch</a></td></tr>
+        <tr><td>14</td><td>Surah Ibrahim</td><td><a href="https://youtu.be/-0A1Uy_3BqE?feature=shared">Watch</a></td></tr>
+        <tr><td>15</td><td>Surah Al Hijr</td><td><a href="https://youtu.be/WslQRNymzYw?feature=shared">Watch</a></td></tr>
+        <tr><td>16</td><td>Surah An Nahl</td><td><a href="https://youtu.be/QHjmot_zB3M?feature=shared">Watch</a></td></tr>
+        <tr><td>17</td><td>Surah Israh</td><td><a href="https://youtu.be/xnc9HL6o5yQ?feature=shared">Watch</a></td></tr>
+        <tr><td>18</td><td>Surah Al Kahf</td><td><a href="https://youtu.be/znuTS6Q96Vs?feature=shared">Watch</a></td></tr>
+        <tr><td>19</td><td>Surah Maryam</td><td><a href="https://youtu.be/JaeLTXaOmiU?feature=shared">Watch</a></td></tr>
+        <tr><td>20</td><td>Surah Taha</td><td><a href="https://youtu.be/P99qEmtNSqo?feature=shared">Watch</a></td></tr>
+        <tr><td>21</td><td>Surah Al Anbiya</td><td><a href="https://youtu.be/v_DfkRPS-Ak?feature=shared">Watch</a></td></tr>
+        <tr><td>22</td><td>Surah Al Hajj</td><td><a href="https://youtu.be/e4a3p8TgUw0?feature=shared">Watch</a></td></tr>
+        <tr><td>23</td><td>Surah Al Muminun</td><td><a href="https://youtu.be/l7k51vBeLD8?feature=shared">Watch</a></td></tr>
+        <tr><td>24</td><td>Surah An Nur</td><td><a href="https://youtu.be/ezWh_uABBzQ?feature=shared">Watch</a></td></tr>
+        <tr><td>25</td><td>Surah Al Furqan</td><td><a href="https://youtu.be/btl5ytL8_Fk?feature=shared">Watch</a></td></tr>
+        <tr><td>26</td><td>Surah Ash Shuara</td><td><a href="https://youtu.be/SrtlaNMRRw4?feature=shared">Watch</a></td></tr>
+        <tr><td>27</td><td>Surah An Naml</td><td><a href="https://youtu.be/q8vS7jzIph4?feature=shared">Watch</a></td></tr>
+        <tr><td>28</td><td>Surah Al Qasas</td><td><a href="https://youtu.be/zUEzIrYc2eI?feature=shared">Watch</a></td></tr>
+        <tr><td>29</td><td>Surah Al Ankabut</td><td><a href="https://youtu.be/mMYP6kuTSx0?feature=shared">Watch</a></td></tr>
+        <tr><td>30</td><td>Surah Ar Rum</td><td><a href="https://youtu.be/22bWGmjtE9Y?feature=shared">Watch</a></td></tr>
+        <tr><td>31</td><td>Surah Luqman</td><td><a href="https://youtu.be/BSvQ9LQ78Cs?feature=shared">Watch</a></td></tr>
+        <tr><td>32</td><td>Surah As Sajdah</td><td><a href="https://youtu.be/CiQIHvku7nU?feature=shared">Watch</a></td></tr>
+        <tr><td>33</td><td>Surah Al Ahzab</td><td><a href="https://youtu.be/u8S2zJpprZI?feature=shared">Watch</a></td></tr>
+        <tr><td>34</td><td>Surah Saba</td><td><a href="https://youtu.be/lTTAFbgmJe0?feature=shared">Watch</a></td></tr>
+        <tr><td>35</td><td>Surah Fathir</td><td><a href="https://youtu.be/389WDzOLksA?feature=shared">Watch</a></td></tr>
+        <tr><td>36</td><td>Surah Yaseen</td><td><a href="https://youtu.be/emousr_FIHI?feature=shared">Watch</a></td></tr>
+        <tr><td>37</td><td>Surah As Saffat</td><td><a href="https://youtu.be/WiRy0sl7JZ8?feature=shared">Watch</a></td></tr>
+        <tr><td>38</td><td>Surah Saad</td><td><a href="https://youtu.be/PBFKqO56c-4?feature=shared">Watch</a></td></tr>
+        <tr><td>39</td><td>Surah Az Zumar</td><td><a href="https://youtu.be/1yGVVFet_BI?feature=shared">Watch</a></td></tr>
+        <tr><td>40</td><td>Surah Ghafir</td><td><a href="https://youtu.be/WqPMw7au_hA?feature=shared">Watch</a></td></tr>
+        <tr><td>41</td><td>Surah Fussilat</td><td><a href="https://youtu.be/8Jk7U3_w_g8?feature=shared">Watch</a></td></tr>
+        <tr><td>42</td><td>Surah Ash Shura</td><td><a href="https://youtu.be/VItjxwR6qnY?feature=shared">Watch</a></td></tr>
+        <tr><td>43</td><td>Surah Az Zukhruf</td><td><a href="https://youtu.be/3z8gJg7bAyY?feature=shared">Watch</a></td></tr>
+        <tr><td>44</td><td>Surah Ad Dukhan</td><td><a href="https://youtu.be/TwCpfnQYr5o?feature=shared">Watch</a></td></tr>
+        <tr><td>45</td><td>Surah Al Jathiya</td><td><a href="https://youtu.be/-h0onW_Nt3A?feature=shared">Watch</a></td></tr>
+        <tr><td>46</td><td>Surah Al Ahqaf</td><td><a href="https://youtu.be/mqOIb3OfH6g?feature=shared">Watch</a></td></tr>
+        <tr><td>47</td><td>Surah Muhammad</td><td><a href="https://youtu.be/yEq7qFfLRpI?feature=shared">Watch</a></td></tr>
+        <tr><td>48</td><td>Surah Al Fath</td><td><a href="https://youtu.be/wK6Ffa7bZX0?feature=shared">Watch</a></td></tr>
+        <tr><td>49</td><td>Surah Al Hujurat</td><td><a href="https://youtu.be/R9se6pvo0OQ?feature=shared">Watch</a></td></tr>
+        <tr><td>50</td><td>Surah Qaf</td><td><a href="https://youtu.be/nntoQZrnL0s?feature=shared">Watch</a></td></tr>
+        <tr><td>51</td><td>Surah Adh Dhariyat</td><td><a href="https://youtu.be/LYp-bnyhLh4?feature=shared">Watch</a></td></tr>
+        <tr><td>52</td><td>Surah At Tur</td><td><a href="https://youtu.be/ZAHNlp6OBj8?feature=shared">Watch</a></td></tr>
+        <tr><td>53</td><td>Surah An Najm</td><td><a href="https://youtu.be/9z3yO0g4E44?feature=shared">Watch</a></td></tr>
+        <tr><td>54</td><td>Surah Al Qamar</td><td><a href="https://youtu.be/dg27N2f8FAE?feature=shared">Watch</a></td></tr>
+        <tr><td>55</td><td>Surah Ar Rahman</td><td><a href="https://youtu.be/5yG0N0v3F2Q?feature=shared">Watch</a></td></tr>
+        <tr><td>56</td><td>Surah Al Waqiah</td><td><a href="https://youtu.be/39hctVQ_cVs?feature=shared">Watch</a></td></tr>
+        <tr><td>57</td><td>Surah Al Hadid</td><td><a href="https://youtu.be/FSrg5Llo7qg?feature=shared">Watch</a></td></tr>
+        <tr><td>58</td><td>Surah Al Mujadila</td><td><a href="https://youtu.be/_v5_kmdFg7A?feature=shared">Watch</a></td></tr>
+        <tr><td>59</td><td>Surah Al Hashr</td><td><a href="https://youtu.be/Jp9rXj1FXp0?feature=shared">Watch</a></td></tr>
+        <tr><td>60</td><td>Surah Al Mumtahanah</td><td><a href="https://youtu.be/Xgw2SZiqxMw?feature=shared">Watch</a></td></tr>
+        <tr><td>61</td><td>Surah As Saff</td><td><a href="https://youtu.be/e2KhG5Z5w7k?feature=shared">Watch</a></td></tr>
+        <tr><td>62</td><td>Surah Al Jumah</td><td><a href="https://youtu.be/6TZJntgTkD4?feature=shared">Watch</a></td></tr>
+        <tr><td>63</td><td>Surah Al Munafiqun</td><td><a href="https://youtu.be/Qq9UQhxWHDI?feature=shared">Watch</a></td></tr>
+        <tr><td>64</td><td>Surah At Taghabun</td><td><a href="https://youtu.be/XEKVgxH4_4Y?feature=shared">Watch</a></td></tr>
+        <tr><td>65</td><td>Surah At Talaq</td><td><a href="https://youtu.be/QqFlxeq2GHs?feature=shared">Watch</a></td></tr>
+        <tr><td>66</td><td>Surah At Tahrim</td><td><a href="https://youtu.be/0FUw7x0vQXM?feature=shared">Watch</a></td></tr>
+        <tr><td>67</td><td>Surah Al Mulk</td><td><a href="https://youtu.be/Cj_M9oGQtnw?feature=shared">Watch</a></td></tr>
+        <tr><td>68</td><td>Surah Al Qalam</td><td><a href="https://youtu.be/9j5zz-WG0P0?feature=shared">Watch</a></td></tr>
+        <tr><td>69</td><td>Surah Al Haqqah</td><td><a href="https://youtu.be/b02huNrQFXw?feature=shared">Watch</a></td></tr>
+        <tr><td>70</td><td>Surah Al Ma'arij</td><td><a href="https://youtu.be/KltwHzU1bhI?feature=shared">Watch</a></td></tr>
+        <tr><td>71</td><td>Surah Nuh</td><td><a href="https://youtu.be/K7LskYZct30?feature=shared">Watch</a></td></tr>
+        <tr><td>72</td><td>Surah Al Jin</td><td><a href="https://youtu.be/dOITuw_9Vck?feature=shared">Watch</a></td></tr>
+        <tr><td>73</td><td>Surah Al Muzzammil</td><td><a href="https://youtu.be/KZ0cE-qlgXw?feature=shared">Watch</a></td></tr>
+        <tr><td>74</td><td>Surah Al Mudathir</td><td><a href="https://youtu.be/f2z2cXj6Xq4?feature=shared">Watch</a></td></tr>
+        <tr><td>75</td><td>Surah Al Qiyamah</td><td><a href="https://youtu.be/Qy0WqOykNKQ?feature=shared">Watch</a></td></tr>
+        <tr><td>76</td><td>Surah Al Insan</td><td><a href="https://youtu.be/S3ipXvKn0Ac?feature=shared">Watch</a></td></tr>
+        <tr><td>77</td><td>Surah Al Mursalat</td><td><a href="https://youtu.be/73VfSyJzFTQ?feature=shared">Watch</a></td></tr>
+        <tr><td>78</td><td>Surah An Naba</td><td><a href="https://youtu.be/4AM6RxxwmOs?feature=shared">Watch</a></td></tr>
+        <tr><td>79</td><td>Surah An Nazihat</td><td><a href="https://youtu.be/Zd0TYqFsbto?feature=shared">Watch</a></td></tr>
+        <tr><td>80</td><td>Surah Abasa</td><td><a href="https://youtu.be/h1OvgG2s0X4?feature=shared">Watch</a></td></tr>
+        <tr><td>81</td><td>Surah At Takwir</td><td><a href="https://youtu.be/PKpIz5RojZA?feature=shared">Watch</a></td></tr>
+        <tr><td>82</td><td>Surah Al Infitar</td><td><a href="https://youtu.be/_DQpMnzRHwI?feature=shared">Watch</a></td></tr>
+        <tr><td>83</td><td>Surah Al Mutaffifin</td><td><a href="https://youtu.be/zHDVVuyc7ro?feature=shared">Watch</a></td></tr>
+        <tr><td>84</td><td>Surah Al Inshiqaq</td><td><a href="https://youtu.be/Z39R0kHH6eA?feature=shared">Watch</a></td></tr>
+        <tr><td>85</td><td>Surah Al Buruj</td><td><a href="https://youtu.be/15UK6-vq0G8?feature=shared">Watch</a></td></tr>
+        <tr><td>86</td><td>Surah At Tariq</td><td><a href="https://youtu.be/NhdzHg5vNcA?feature=shared">Watch</a></td></tr>
+        <tr><td>87</td><td>Surah Al A'la</td><td><a href="https://youtu.be/X7c8bCqk5TQ?feature=shared">Watch</a></td></tr>
+        <tr><td>88</td><td>Surah Al Ghashiya</td><td><a href="https://youtu.be/_gWsnv9n7ZI?feature=shared">Watch</a></td></tr>
+        <tr><td>89</td><td>Surah Al Fajr</td><td><a href="https://youtu.be/qjgjY7tq5sQ?feature=shared">Watch</a></td></tr>
+        <tr><td>90</td><td>Surah Al Balad</td><td><a href="https://youtu.be/3i6dr5RZth8?feature=shared">Watch</a></td></tr>
+        <tr><td>91</td><td>Surah Ash Shams</td><td><a href="https://youtu.be/9jj_GRY5m_g?feature=shared">Watch</a></td></tr>
+        <tr><td>92</td><td>Surah Al Layl</td><td><a href="https://youtu.be/m9_fqFkrX_w?feature=shared">Watch</a></td></tr>
+        <tr><td>93</td><td>Surah Adh Dhuhah</td><td><a href="https://youtu.be/KzLihnLXmAI?feature=shared">Watch</a></td></tr>
+        <tr><td>94</td><td>Surah Al Inshirah</td><td><a href="https://youtu.be/89BzYfgGxlM?feature=shared">Watch</a></td></tr>
+        <tr><td>95</td><td>Surah At Tin</td><td><a href="https://youtu.be/ZxVJOlU6mZ4?feature=shared">Watch</a></td></tr>
+        <tr><td>96</td><td>Surah Al Alaq</td><td><a href="https://youtu.be/X9TntAqGV7E?feature=shared">Watch</a></td></tr>
+        <tr><td>97</td><td>Surah Al Qadr</td><td><a href="https://youtu.be/Du4YOw8XwPQ?feature=shared">Watch</a></td></tr>
+        <tr><td>98</td><td>Surah Al Bayyina</td><td><a href="https://youtu.be/lc07uCF8b2Y?feature=shared">Watch</a></td></tr>
+        <tr><td>99</td><td>Surah Az Zalzalah</td><td><a href="https://youtu.be/L3nb5oI6IfQ?feature=shared">Watch</a></td></tr>
+        <tr><td>100</td><td>Surah Al Adiyat</td><td><a href="https://youtu.be/ehrOq0B0jTw?feature=shared">Watch</a></td></tr>
+        <tr><td>101</td><td>Surah Al Qari'ah</td><td><a href="https://youtu.be/0XeNtcSV9S4?feature=shared">Watch</a></td></tr>
+        <tr><td>102</td><td>Surah At Takathur</td><td><a href="https://youtu.be/V_6wnHq2biQ?feature=shared">Watch</a></td></tr>
+        <tr><td>103</td><td>Surah Al Asr</td><td><a href="https://youtu.be/9Jrofa36Xtk?feature=shared">Watch</a></td></tr>
+        <tr><td>104</td><td>Surah Al Humazah</td><td><a href="https://youtu.be/U71UlQma3dM?feature=shared">Watch</a></td></tr>
+        <tr><td>105</td><td>Surah Al Fil</td><td><a href="https://youtu.be/9XkIC1_GAAk?feature=shared">Watch</a></td></tr>
+        <tr><td>106</td><td>Surah Quraish</td><td><a href="https://youtu.be/YbwB3Xl3ph8?feature=shared">Watch</a></td></tr>
+        <tr><td>107</td><td>Surah Al Ma'un</td><td><a href="https://youtu.be/q7O3f8JwzP8?feature=shared">Watch</a></td></tr>
+        <tr><td>108</td><td>Surah Al Kauthar</td><td><a href="https://youtu.be/eTOm3Q16mQA?feature=shared">Watch</a></td></tr>
+        <tr><td>109</td><td>Surah Al Kafirun</td><td><a href="https://youtu.be/ATpzgnIUVy8?feature=shared">Watch</a></td></tr>
+        <tr><td>110</td><td>Surah An Nasr</td><td><a href="https://youtu.be/Qx8qLgz12nA?feature=shared">Watch</a></td></tr>
+        <tr><td>111</td><td>Surah Al Masad</td><td><a href="https://youtu.be/_wqHDt6hfF0?feature=shared">Watch</a></td></tr>
+        <tr><td>112</td><td>Surah Al Ikhlas</td><td><a href="https://youtu.be/2oHAlxuysZA?feature=shared">Watch</a></td></tr>
+        <tr><td>113</td><td>Surah Al Falaq</td><td><a href="https://youtu.be/jfD97TrFkvY?feature=shared">Watch</a></td></tr>
+        <tr><td>114</td><td>Surah An Nas</td><td><a href="https://youtu.be/b02huNrQFXw?feature=shared">Watch</a></td></tr>
+        
 st.markdown('</div>', unsafe_allow_html=True)
 
 
