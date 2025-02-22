@@ -37,14 +37,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Styling the text
-st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        View & Read the <span style="color: #2980b9;">Quran</span> PDF
-    </p>
-""", unsafe_allow_html=True)
-
-
 
 # Styling the text
 st.markdown("""
@@ -200,125 +192,67 @@ st.markdown("""
         <tr><td>114</td><td>Surah An-Nas</td><td><a href="https://youtu.be/X5vR4paBKrE?feature=shared">Watch</a></td></tr>
     </table>
 """, unsafe_allow_html=True)
-
-
 import streamlit as st
-import pandas as pd
-
-# Adding custom CSS for styling the app
-st.markdown("""
-    <style>
-        .title {
-            color: #4CAF50;
-            font-size: 36px;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        .table th, .table td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-            font-size: 14px;
-        }
-        .table th {
-            background-color: #2980b9;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .table tr:nth-child(odd) {
-            background-color: #e9f7ef;
-        }
-        .table tr:hover {
-            background-color: #ddd;
-        }
-        .download-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .download-btn:hover {
-            background-color: #45a049;
-        }
-        .para-name {
-            color: #3e8e41;
-            font-weight: bold;
-        }
-        .pdf-icon {
-            font-size: 20px;
-            color: #4CAF50;
-        }
-        .blue-text {
-            color: #2980b9;
-            font-weight: bold;
-        }
-    </style>
-""", unsafe_allow_html=True)
 
 # Adding the custom heading using HTML
 st.markdown("""
     <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        Quran Paras <span style="color: #2980b9;">PDF Download</span>
+        Quran Surahs <span style="color: #2980b9;">PDF Download</span>
     </p>
 """, unsafe_allow_html=True)
 
-# GitHub repository URL for the raw files
-github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
-
-# List of Para numbers with their corresponding names in Arabic and English
-pdf_files = [
-    {"name": "Para 1: Al-Fatiha", "arabic_name": "الفاتحة", "file": "Holy-Quran-Para-1.pdf"},
-    {"name": "Para 2: Al-Baqarah", "arabic_name": "البقرة", "file": "Holy-Quran-Para-2.pdf"},
-    {"name": "Para 3: Aal-E-Imran", "arabic_name": "آل عمران", "file": "Holy-Quran-Para-3.pdf"},
-    {"name": "Para 4: An-Nisa", "arabic_name": "النساء", "file": "Holy-Quran-Para-4.pdf"},
-    {"name": "Para 5: Al-Ma'idah", "arabic_name": "المائدة", "file": "Holy-Quran-Para-5.pdf"},
-    {"name": "Para 6: Al-An'am", "arabic_name": "الأنعام", "file": "Holy-Quran-Para-6.pdf"},
-    {"name": "Para 7: Al-A'raf", "arabic_name": "الأعراف", "file": "Holy-Quran-Para-7.pdf"},
-    {"name": "Para 8: Al-Anfal", "arabic_name": "الأنفال", "file": "Holy-Quran-Para-8.pdf"},
-    {"name": "Para 9: At-Tawbah", "arabic_name": "التوبة", "file": "Holy-Quran-Para-9.pdf"},
-    {"name": "Para 10: Yunus", "arabic_name": "يونس", "file": "Holy-Quran-Para-10.pdf"},
-    {"name": "Para 11: Hud", "arabic_name": "هود", "file": "Holy-Quran-Para-11.pdf"},
-    {"name": "Para 12: Yusuf", "arabic_name": "يوسف", "file": "Holy-Quran-Para-12.pdf"},
-    {"name": "Para 13: Ibrahim", "arabic_name": "إبراهيم", "file": "Holy-Quran-Para-13.pdf"},
-    {"name": "Para 14: Al-Hijr", "arabic_name": "الحجر", "file": "Holy-Quran-Para-14.pdf"},
-    {"name": "Para 15: An-Nahl", "arabic_name": "النحل", "file": "Holy-Quran-Para-15.pdf"},
-    {"name": "Para 16: Al-Isra", "arabic_name": "الإسراء", "file": "Holy-Quran-Para-16.pdf"},
-    {"name": "Para 17: Al-Kahf", "arabic_name": "الكهف", "file": "Holy-Quran-Para-17.pdf"},
-    {"name": "Para 18: Maryam", "arabic_name": "مريم", "file": "Holy-Quran-Para-18.pdf"},
-    {"name": "Para 19: Ta-Ha", "arabic_name": "طه", "file": "Holy-Quran-Para-19.pdf"},
-    {"name": "Para 20: Al-Anbiya", "arabic_name": "الأنبياء", "file": "Holy-Quran-Para-20.pdf"},
-    {"name": "Para 21: Al-Hajj", "arabic_name": "الحج", "file": "Holy-Quran-Para-21.pdf"},
-    {"name": "Para 22: Al-Mu'minun", "arabic_name": "المؤمنون", "file": "Holy-Quran-Para-22.pdf"},
-    {"name": "Para 23: An-Nur", "arabic_name": "النور", "file": "Holy-Quran-Para-23.pdf"},
-    {"name": "Para 24: Al-Furqan", "arabic_name": "الفرقان", "file": "Holy-Quran-Para-24.pdf"},
-    {"name": "Para 25: Ash-Shu'ara", "arabic_name": "الشعراء", "file": "Holy-Quran-Para-25.pdf"},
-    {"name": "Para 26: An-Naml", "arabic_name": "النمل", "file": "Holy-Quran-Para-26.pdf"},
-    {"name": "Para 27: Al-Ahqaf", "arabic_name": "الأحقاف", "file": "Holy-Quran-Para-27.pdf"},
-    {"name": "Para 28: Az-Zariyat", "arabic_name": "الذاريات", "file": "Holy-Quran-Para-28.pdf"},
-    {"name": "Para 29: Al-Mujadila", "arabic_name": "المجادلة", "file": "Holy-Quran-Para-29.pdf"},
-    {"name": "Para 30: Al-Buruj", "arabic_name": "البروج", "file": "Holy-Quran-Para-30.pdf"}
+# List of Surah names with their corresponding PDF file names
+surahs = [
+    {"number": 1, "name": "Surah Al-Fatiha", "file": "Surah_Al_Fatiha.pdf"},
+    {"number": 2, "name": "Surah Al-Baqarah", "file": "Surah_Al_Baqarah.pdf"},
+    {"number": 3, "name": "Surah Aal-E-Imran", "file": "Surah_Aal_E_Imran.pdf"},
+    {"number": 4, "name": "Surah An-Nisa", "file": "Surah_An_Nisa.pdf"},
+    {"number": 5, "name": "Surah Al-Ma'idah", "file": "Surah_Al_Maidah.pdf"},
+    {"number": 6, "name": "Surah Al-An'am", "file": "Surah_Al_Anam.pdf"},
+    {"number": 7, "name": "Surah Al-A'raf", "file": "Surah_Al_Araf.pdf"},
+    {"number": 8, "name": "Surah Al-Anfal", "file": "Surah_Al_Anfal.pdf"},
+    {"number": 9, "name": "Surah At-Tawbah", "file": "Surah_At_Tawbah.pdf"},
+    {"number": 10, "name": "Surah Yunus", "file": "Surah_Yunus.pdf"},
+    {"number": 11, "name": "Surah Hud", "file": "Surah_Hud.pdf"},
+    {"number": 12, "name": "Surah Yusuf", "file": "Surah_Yusuf.pdf"},
+    {"number": 13, "name": "Surah Ibrahim", "file": "Surah_Ibrahim.pdf"},
+    {"number": 14, "name": "Surah Al-Hijr", "file": "Surah_Al_Hijr.pdf"},
+    {"number": 15, "name": "Surah An-Nahl", "file": "Surah_An_Nahl.pdf"},
+    {"number": 16, "name": "Surah Al-Isra", "file": "Surah_Al_Isra.pdf"},
+    {"number": 17, "name": "Surah Al-Kahf", "file": "Surah_Al_Kahf.pdf"},
+    {"number": 18, "name": "Surah Maryam", "file": "Surah_Maryam.pdf"},
+    {"number": 19, "name": "Surah Ta-Ha", "file": "Surah_Ta_Ha.pdf"},
+    {"number": 20, "name": "Surah Al-Anbiya", "file": "Surah_Al_Anbiya.pdf"},
+    {"number": 21, "name": "Surah Al-Hajj", "file": "Surah_Al_Hajj.pdf"},
+    {"number": 22, "name": "Surah Al-Mu'minun", "file": "Surah_Al_Muminun.pdf"},
+    {"number": 23, "name": "Surah An-Nur", "file": "Surah_An_Nur.pdf"},
+    {"number": 24, "name": "Surah Al-Furqan", "file": "Surah_Al_Furqan.pdf"},
+    {"number": 25, "name": "Surah Ash-Shu'ara", "file": "Surah_Ash_Shuara.pdf"},
+    {"number": 26, "name": "Surah An-Naml", "file": "Surah_An_Naml.pdf"},
+    {"number": 27, "name": "Surah Al-Ahqaf", "file": "Surah_Al_Ahqaf.pdf"},
+    {"number": 28, "name": "Surah Az-Zariyat", "file": "Surah_Az_Zariyat.pdf"},
+    {"number": 29, "name": "Surah Al-Mujadila", "file": "Surah_Al_Mujadila.pdf"},
+    {"number": 30, "name": "Surah Al-Buruj", "file": "Surah_Al_Buruj.pdf"}
 ]
 
-# Create a DataFrame for proper tabular structure
-df = pd.DataFrame(pdf_files)
+# Displaying the table
+table = '<table style="width:100%; border-collapse: collapse;">'
+table += "<tr><th>Sl.No</th><th>Para Name</th><th>Download PDF</th></tr>"
 
-# Display the table using st.dataframe
-st.dataframe(df[['name', 'arabic_name']])
+# Adding rows for each Surah
+for surah in surahs:
+    table += f"""
+    <tr>
+        <td>{surah['number']}</td>
+        <td>{surah['name']}</td>
+        <td><a href="{surah['file']}">📄 Download PDF</a></td>
+    </tr>
+    """
 
-# Adding download buttons for each row
-for i, para in enumerate(pdf_files):
-    st.markdown(f"""
-        <a href="{github_repo_url}{para['file']}" target="_blank" class="download-btn">
-            📄 Download PDF - {para['name']}
-        </a><br><br>
-    """, unsafe_allow_html=True)
+table += "</table>"
+
+# Display the table in the Streamlit app
+st.markdown(table, unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
