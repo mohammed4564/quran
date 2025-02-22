@@ -223,11 +223,10 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
-
 import streamlit as st
 import pandas as pd
 
-# Adding custom CSS for styling the app at the top
+# Adding custom CSS for styling the app
 st.markdown("""
     <style>
         .title {
@@ -278,6 +277,13 @@ st.markdown("""
             color: #4CAF50;
         }
     </style>
+""", unsafe_allow_html=True)
+
+# Adding the custom heading using HTML
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
+        View & Read the <span style="color: #2980b9;">Quran</span> PDF
+    </p>
 """, unsafe_allow_html=True)
 
 # GitHub repository URL for the raw files
