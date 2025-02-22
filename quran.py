@@ -37,7 +37,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("Islamic Resource Center")
+# Styling the title
+st.markdown("""
+    <h1 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 48px; font-weight: bold; color: #8e44ad;">
+        Islamic Resource Center
+    </h1>
+""", unsafe_allow_html=True)
 
 st.write("View & Read the Quran PDF")
 webpage_urly = 'https://www.islamicnet.com/quran.php'
