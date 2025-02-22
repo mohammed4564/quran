@@ -194,158 +194,123 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
-    <tr>
-        <th>Sl.No</th>
-        <th>Surah Name</th>
-        <th>Download PDF</th>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Surah Al-Baqarah</td>
-        <td><a href="Surah_Al_Baqarah.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Surah Aal-E-Imran</td>
-        <td><a href="Surah_Aal_E_Imran.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Surah An-Nisa</td>
-        <td><a href="Surah_An_Nisa.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Surah Al-Ma'idah</td>
-        <td><a href="Surah_Al_Maidah.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Surah Al-An'am</td>
-        <td><a href="Surah_Al_Anam.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Surah Al-A'raf</td>
-        <td><a href="Surah_Al_Araf.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Surah Al-Anfal</td>
-        <td><a href="Surah_Al_Anfal.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Surah At-Tawbah</td>
-        <td><a href="Surah_At_Tawbah.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Surah Yunus</td>
-        <td><a href="Surah_Yunus.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Surah Hud</td>
-        <td><a href="Surah_Hud.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>Surah Yusuf</td>
-        <td><a href="Surah_Yusuf.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>Surah Ibrahim</td>
-        <td><a href="Surah_Ibrahim.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>Surah Al-Hijr</td>
-        <td><a href="Surah_Al_Hijr.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>Surah An-Nahl</td>
-        <td><a href="Surah_An_Nahl.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>16</td>
-        <td>Surah Al-Isra</td>
-        <td><a href="Surah_Al_Isra.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>17</td>
-        <td>Surah Al-Kahf</td>
-        <td><a href="Surah_Al_Kahf.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>18</td>
-        <td>Surah Maryam</td>
-        <td><a href="Surah_Maryam.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>19</td>
-        <td>Surah Ta-Ha</td>
-        <td><a href="Surah_Ta_Ha.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>20</td>
-        <td>Surah Al-Anbiya</td>
-        <td><a href="Surah_Al_Anbiya.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>Surah Al-Hajj</td>
-        <td><a href="Surah_Al_Hajj.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>22</td>
-        <td>Surah Al-Mu'minun</td>
-        <td><a href="Surah_Al_Muminun.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>23</td>
-        <td>Surah An-Nur</td>
-        <td><a href="Surah_An_Nur.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>24</td>
-        <td>Surah Al-Furqan</td>
-        <td><a href="Surah_Al_Furqan.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>25</td>
-        <td>Surah Ash-Shu'ara</td>
-        <td><a href="Surah_Ash_Shuara.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>26</td>
-        <td>Surah An-Naml</td>
-        <td><a href="Surah_An_Naml.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>27</td>
-        <td>Surah Al-Ahqaf</td>
-        <td><a href="Surah_Al_Ahqaf.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>28</td>
-        <td>Surah Az-Zariyat</td>
-        <td><a href="Surah_Az_Zariyat.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>29</td>
-        <td>Surah Al-Mujadila</td>
-        <td><a href="Surah_Al_Mujadila.pdf">📄 Download PDF</a></td>
-    </tr>
-    <tr>
-        <td>30</td>
-        <td>Surah Al-Buruj</td>
-        <td><a href="Surah_Al_Buruj.pdf">📄 Download PDF</a></td>
-    </tr>
-</table>
+import streamlit as st
+
+# Adding custom CSS for styling the app
+st.markdown("""
+    <style>
+        .title {
+            color: #4CAF50;
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tr:nth-child(odd) {
+            background-color: #e9f7ef;
+        }
+        .table tr:hover {
+            background-color: #ddd;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+        .para-name {
+            color: #3e8e41;
+            font-weight: bold;
+        }
+        .pdf-icon {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+        .blue-text {
+            color: #2980b9;
+            font-weight: bold;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Adding the custom heading using HTML
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
+        Quran Paras <span style="color: #2980b9;">PDF Download</span>
+    </p>
+""", unsafe_allow_html=True)
+
+# GitHub repository URL for the raw files
+github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
+
+# List of Para numbers with their corresponding names in Arabic and English
+pdf_files = [
+    {"name": "Para 1: Al-Fatiha", "arabic_name": "الفاتحة", "file": "Holy-Quran-Para-1.pdf"},
+    {"name": "Para 2: Al-Baqarah", "arabic_name": "البقرة", "file": "Holy-Quran-Para-2.pdf"},
+    {"name": "Para 3: Aal-E-Imran", "arabic_name": "آل عمران", "file": "Holy-Quran-Para-3.pdf"},
+    {"name": "Para 4: An-Nisa", "arabic_name": "النساء", "file": "Holy-Quran-Para-4.pdf"},
+    {"name": "Para 5: Al-Ma'idah", "arabic_name": "المائدة", "file": "Holy-Quran-Para-5.pdf"},
+    {"name": "Para 6: Al-An'am", "arabic_name": "الأنعام", "file": "Holy-Quran-Para-6.pdf"},
+    {"name": "Para 7: Al-A'raf", "arabic_name": "الأعراف", "file": "Holy-Quran-Para-7.pdf"},
+    {"name": "Para 8: Al-Anfal", "arabic_name": "الأنفال", "file": "Holy-Quran-Para-8.pdf"},
+    {"name": "Para 9: At-Tawbah", "arabic_name": "التوبة", "file": "Holy-Quran-Para-9.pdf"},
+    {"name": "Para 10: Yunus", "arabic_name": "يونس", "file": "Holy-Quran-Para-10.pdf"},
+    {"name": "Para 11: Hud", "arabic_name": "هود", "file": "Holy-Quran-Para-11.pdf"},
+    {"name": "Para 12: Yusuf", "arabic_name": "يوسف", "file": "Holy-Quran-Para-12.pdf"},
+    {"name": "Para 13: Ibrahim", "arabic_name": "إبراهيم", "file": "Holy-Quran-Para-13.pdf"},
+    {"name": "Para 14: Al-Hijr", "arabic_name": "الحجر", "file": "Holy-Quran-Para-14.pdf"},
+    {"name": "Para 15: An-Nahl", "arabic_name": "النحل", "file": "Holy-Quran-Para-15.pdf"},
+    {"name": "Para 16: Al-Isra", "arabic_name": "الإسراء", "file": "Holy-Quran-Para-16.pdf"},
+    {"name": "Para 17: Al-Kahf", "arabic_name": "الكهف", "file": "Holy-Quran-Para-17.pdf"},
+    {"name": "Para 18: Maryam", "arabic_name": "مريم", "file": "Holy-Quran-Para-18.pdf"},
+    {"name": "Para 19: Ta-Ha", "arabic_name": "طه", "file": "Holy-Quran-Para-19.pdf"},
+    {"name": "Para 20: Al-Anbiya", "arabic_name": "الأنبياء", "file": "Holy-Quran-Para-20.pdf"},
+    {"name": "Para 21: Al-Hajj", "arabic_name": "الحج", "file": "Holy-Quran-Para-21.pdf"},
+    {"name": "Para 22: Al-Mu'minun", "arabic_name": "المؤمنون", "file": "Holy-Quran-Para-22.pdf"},
+    {"name": "Para 23: An-Nur", "arabic_name": "النور", "file": "Holy-Quran-Para-23.pdf"},
+    {"name": "Para 24: Al-Furqan", "arabic_name": "الفرقان", "file": "Holy-Quran-Para-24.pdf"},
+    {"name": "Para 25: Ash-Shu'ara", "arabic_name": "الشعراء", "file": "Holy-Quran-Para-25.pdf"},
+    {"name": "Para 26: An-Naml", "arabic_name": "النمل", "file": "Holy-Quran-Para-26.pdf"},
+    {"name": "Para 27: Al-Ahqaf", "arabic_name": "الأحقاف", "file": "Holy-Quran-Para-27.pdf"},
+    {"name": "Para 28: Az-Zariyat", "arabic_name": "الذاريات", "file": "Holy-Quran-Para-28.pdf"},
+    {"name": "Para 29: Al-Mujadila", "arabic_name": "المجادلة", "file": "Holy-Quran-Para-29.pdf"},
+    {"name": "Para 30: Al-Buruj", "arabic_name": "البروج", "file": "Holy-Quran-Para-30.pdf"}
+]
+
+# Displaying the table with titles in blue
+table_data = []
+for i, para in enumerate(pdf_files, start=1):
+    row = [
+        i, 
+        f"{para['name']} ({para['arabic_name']})",
+        f"<a href='{github_repo_url}{para['file']}' target='_blank' class='download-btn'>📄 Download PDF</a>"
+    ]
+    table_data.append(row)
+
+# Convert list to DataFrame and display the table in Streamlit
+df = pd.DataFrame(table_data, columns=["Sl.No", "Para Name", "Download PDF"])
+st.write(df.to_html(escape=False), unsafe_allow_html=True)
+
 
 
 
