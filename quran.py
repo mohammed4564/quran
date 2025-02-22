@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Custom CSS for scrollable container
 st.markdown("""
@@ -194,7 +195,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-import streamlit as st
 
 # Adding custom CSS for styling the app
 st.markdown("""
