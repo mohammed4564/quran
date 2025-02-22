@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 
 # Custom CSS for scrollable container
 st.markdown("""
@@ -37,12 +36,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-# Styling the title
-st.markdown("""
-    <h1 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 48px; font-weight: bold; color: #8e44ad;">
-        Islamic Resource Center
-    </h1>
-""", unsafe_allow_html=True)
 
 # Styling the text
 st.markdown("""
@@ -51,22 +44,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-
-
-webpage_urly = 'https://www.islamicnet.com/quran.php'
-st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
-
-# Styling the text
-# Add custom CSS to style the header text
-# Add a beautiful custom-styled heading
-st.markdown("""
-    <p style="font-size: 36px; font-weight: bold; color: #2ecc71; text-align: center;">
-        <span style="color: #8e44ad;">Sacred</span> Quran <span style="color: #f39c12;">MP3</span> Collection
-    </p>
-""", unsafe_allow_html=True)
-
-webpage_url = 'https://quranicaudio.com/'
-st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 
 # Styling the text
@@ -224,7 +201,9 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
+
 import streamlit as st
+import pandas as pd
 
 # Adding custom CSS for styling the app
 st.markdown("""
@@ -330,8 +309,8 @@ pdf_files = [
 # Create a DataFrame for proper tabular structure
 df = pd.DataFrame(pdf_files)
 
-# Display the table
-st.table(df[['name', 'arabic_name']].style.applymap(lambda x: 'color: #2980b9', subset=['name']).hide_index())
+# Display the table using st.dataframe
+st.dataframe(df[['name', 'arabic_name']])
 
 # Adding download buttons for each row
 for i, para in enumerate(pdf_files):
