@@ -56,9 +56,10 @@ st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', 
 
 # Styling the text
 # Add custom CSS to style the header text
+# Add a beautiful custom-styled heading
 st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        Quran MP3 Files <span style="color: #2980b9;">Quran</span> PDF
+    <p style="font-size: 36px; font-weight: bold; color: #2ecc71; text-align: center;">
+        <span style="color: #8e44ad;">Sacred</span> Quran <span style="color: #f39c12;">MP3</span> Collection
     </p>
 """, unsafe_allow_html=True)
 
