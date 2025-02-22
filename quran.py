@@ -37,20 +37,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Styling the title
-st.markdown("""
-    <h1 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 48px; font-weight: bold; color: #8e44ad;">
-        Islamic Resource Center
-    </h1>
-""", unsafe_allow_html=True)
-
-# Styling the text
-st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        View & Read the <span style="color: #2980b9;">Quran</span> PDF
-    </p>
-""", unsafe_allow_html=True)
-
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -147,6 +133,21 @@ st.markdown("""
 
 # Displaying the header with the title
 st.markdown('<div class="title">Download Quran Paras</div>', unsafe_allow_html=True)
+
+# Styling the title
+st.markdown("""
+    <h1 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 48px; font-weight: bold; color: #8e44ad;">
+        Islamic Resource Center
+    </h1>
+""", unsafe_allow_html=True)
+
+# Styling the text
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
+        View & Read the <span style="color: #2980b9;">Quran</span> PDF
+    </p>
+""", unsafe_allow_html=True)
+
 
 # Display the table of Quran Paras
 st.write("### List of Quran Paras")
