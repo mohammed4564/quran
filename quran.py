@@ -51,6 +51,147 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
+
+# GitHub repository URL for the raw files
+github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
+
+# List of Para numbers with their corresponding names in Arabic and English
+pdf_files = [
+    {"name": "Para 1: Al-Fatiha", "arabic_name": "الفاتحة", "file": "Holy-Quran-Para-1.pdf"},
+    {"name": "Para 2: Al-Baqarah", "arabic_name": "البقرة", "file": "Holy-Quran-Para-2.pdf"},
+    {"name": "Para 3: Aal-E-Imran", "arabic_name": "آل عمران", "file": "Holy-Quran-Para-3.pdf"},
+    {"name": "Para 4: An-Nisa", "arabic_name": "النساء", "file": "Holy-Quran-Para-4.pdf"},
+    {"name": "Para 5: Al-Ma'idah", "arabic_name": "المائدة", "file": "Holy-Quran-Para-5.pdf"},
+    {"name": "Para 6: Al-An'am", "arabic_name": "الأنعام", "file": "Holy-Quran-Para-6.pdf"},
+    {"name": "Para 7: Al-A'raf", "arabic_name": "الأعراف", "file": "Holy-Quran-Para-7.pdf"},
+    {"name": "Para 8: Al-Anfal", "arabic_name": "الأنفال", "file": "Holy-Quran-Para-8.pdf"},
+    {"name": "Para 9: At-Tawbah", "arabic_name": "التوبة", "file": "Holy-Quran-Para-9.pdf"},
+    {"name": "Para 10: Yunus", "arabic_name": "يونس", "file": "Holy-Quran-Para-10.pdf"},
+    {"name": "Para 11: Hud", "arabic_name": "هود", "file": "Holy-Quran-Para-11.pdf"},
+    {"name": "Para 12: Yusuf", "arabic_name": "يوسف", "file": "Holy-Quran-Para-12.pdf"},
+    {"name": "Para 13: Ibrahim", "arabic_name": "إبراهيم", "file": "Holy-Quran-Para-13.pdf"},
+    {"name": "Para 14: Al-Hijr", "arabic_name": "الحجر", "file": "Holy-Quran-Para-14.pdf"},
+    {"name": "Para 15: An-Nahl", "arabic_name": "النحل", "file": "Holy-Quran-Para-15.pdf"},
+    {"name": "Para 16: Al-Isra", "arabic_name": "الإسراء", "file": "Holy-Quran-Para-16.pdf"},
+    {"name": "Para 17: Al-Kahf", "arabic_name": "الكهف", "file": "Holy-Quran-Para-17.pdf"},
+    {"name": "Para 18: Maryam", "arabic_name": "مريم", "file": "Holy-Quran-Para-18.pdf"},
+    {"name": "Para 19: Ta-Ha", "arabic_name": "طه", "file": "Holy-Quran-Para-19.pdf"},
+    {"name": "Para 20: Al-Anbiya", "arabic_name": "الأنبياء", "file": "Holy-Quran-Para-20.pdf"},
+    {"name": "Para 21: Al-Hajj", "arabic_name": "الحج", "file": "Holy-Quran-Para-21.pdf"},
+    {"name": "Para 22: Al-Mu'minun", "arabic_name": "المؤمنون", "file": "Holy-Quran-Para-22.pdf"},
+    {"name": "Para 23: An-Nur", "arabic_name": "النور", "file": "Holy-Quran-Para-23.pdf"},
+    {"name": "Para 24: Al-Furqan", "arabic_name": "الفرقان", "file": "Holy-Quran-Para-24.pdf"},
+    {"name": "Para 25: Ash-Shu'ara", "arabic_name": "الشعراء", "file": "Holy-Quran-Para-25.pdf"},
+    {"name": "Para 26: An-Naml", "arabic_name": "النمل", "file": "Holy-Quran-Para-26.pdf"},
+    {"name": "Para 27: Al-Ahqaf", "arabic_name": "الأحقاف", "file": "Holy-Quran-Para-27.pdf"},
+    {"name": "Para 28: Az-Zariyat", "arabic_name": "الذاريات", "file": "Holy-Quran-Para-28.pdf"},
+    {"name": "Para 29: Al-Mujadila", "arabic_name": "المجادلة", "file": "Holy-Quran-Para-29.pdf"},
+    {"name": "Para 30: Al-Buruj", "arabic_name": "البروج", "file": "Holy-Quran-Para-30.pdf"}
+]
+
+# Streamlit UI
+st.title('Quran Paras PDF Download')
+
+# Adding custom CSS for styling the app
+st.markdown("""
+    <style>
+        .title {
+            color: #4CAF50;
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tr:nth-child(odd) {
+            background-color: #e9f7ef;
+        }
+        .table tr:hover {
+            background-color: #ddd;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+        .para-name {
+            color: #3e8e41;
+            font-weight: bold;
+        }
+        .pdf-icon {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Displaying the header with the title
+st.markdown('<div class="title">Download Quran Paras</div>', unsafe_allow_html=True)
+
+# Display the table of Quran Paras
+st.write("### List of Quran Paras")
+st.write(f"Total {len(pdf_files)} Paras available.")
+
+# Create a table with Serial No., Para Name (Arabic & English), and a download button
+table_data = []
+for idx, pdf in enumerate(pdf_files, start=1):
+    para_name = f"{pdf['name']} ({pdf['arabic_name']})"
+    file_name = pdf["file"]
+    download_link = f"{github_repo_url}{file_name}"
+
+    # Add row to the table with serial number, para name, and a download link
+    table_data.append([idx, para_name, download_link])
+
+# Display the table using Streamlit's table function
+st.write("### Quran Paras Table")
+st.markdown("""
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Serial No.</th>
+                <th>Para Name (Arabic & English)</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody>
+""", unsafe_allow_html=True)
+
+# Adding the table rows with alternating colors and download links
+for idx, pdf in enumerate(pdf_files, start=1):
+    para_name = f"{pdf['name']} ({pdf['arabic_name']})"
+    download_link = f"{github_repo_url}{pdf['file']}"
+    st.markdown(f"""
+        <tr>
+            <td>{idx}</td>
+            <td>{para_name}</td>
+            <td><a href="{download_link}" class="download-btn" target="_blank">📄 Download</a></td>
+        </tr>
+    """, unsafe_allow_html=True)
+
+st.markdown("</tbody></table>", unsafe_allow_html=True)
+
+
+
 webpage_urly = 'https://www.islamicnet.com/quran.php'
 st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
