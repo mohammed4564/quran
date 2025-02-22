@@ -54,7 +54,14 @@ st.markdown("""
 webpage_urly = 'https://www.islamicnet.com/quran.php'
 st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
-st.write("Quran MP3 Files")
+# Styling the text
+# Add custom CSS to style the header text
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
+        Quran MP3 Files <span style="color: #2980b9;">Quran</span> PDF
+    </p>
+""", unsafe_allow_html=True)
+
 webpage_url = 'https://quranicaudio.com/'
 st.markdown(f'<iframe src="{webpage_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
