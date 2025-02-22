@@ -1,4 +1,18 @@
 import streamlit as st
+
+# Custom CSS for scrollable container
+st.markdown("""
+    <style>
+        .scrollable-container {
+            max-height: 600px;  /* Adjust this value to fit your needs */
+            overflow-y: scroll;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Content inside the scrollable container
+st.markdown('<div class="scrollable-container">', unsafe_allow_html=True)
+
 st.write('''The **Quran** is the holy book of Islam, revealed to Prophet Muhammad (PBUH) over 23 years, 
 containing 114 chapters and over 6,000 verses. It provides guidance on theology, morality, and law,
 emphasizing the oneness of God and the Day of Judgment. The Quran is central to Islamic worship and
@@ -131,5 +145,6 @@ st.write("[Surah No :112 - Surah Iqlas - By Sheikh Abdur Rahman As Sudais](https
 st.write("[Surah No :113 - Surah Falak - By Sheikh Abdur Rahman As Sudais](https://youtu.be/gUtD5O5AmaQ?feature=shared)")
 st.write("[Surah No :114 - Surah An Naas - By Sheikh Abdur Rahman As Sudais](https://youtu.be/ZIUSO7aAJPY?feature=shared)")
 
+st.markdown('</div>', unsafe_allow_html=True)
 
 
