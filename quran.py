@@ -97,7 +97,9 @@ st.markdown("""
 
 # Table with all 114 links
 st.write("""
-    <table>
+    <html>
+        <body>
+            <table>
         <tr><th>Surah Number</th><th>Surah Name</th><th>Link</th></tr>
         <tr><td>1</td><td>Surah Al-Fatiha</td><td><a href="https://youtu.be/u1nqafqyqTA?feature=shared">Watch</a></td></tr>
         <tr><td>2</td><td>Surah Al-Baqara</td><td><a href="https://youtu.be/nibOG3vRGpU?feature=shared">Watch</a></td></tr>
@@ -213,9 +215,10 @@ st.write("""
         <tr><td>112</td><td>Surah Al-Ikhlas</td><td><a href="https://youtu.be/P6mfdFzYmK4?feature=shared">Watch</a></td></tr>
         <tr><td>113</td><td>Surah Al-Falaq</td><td><a href="https://youtu.be/qLlzAGtOltQ?feature=shared">Watch</a></td></tr>
         <tr><td>114</td><td>Surah An-Nas</td><td><a href="https://youtu.be/X5vR4paBKrE?feature=shared">Watch</a></td></tr>
-    </table>
-</body>
-</html>
+           </table>
+        </body>
+    </html>
+""")
 
         
 st.markdown('</div>', unsafe_allow_html=True)
