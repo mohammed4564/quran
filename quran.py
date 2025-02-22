@@ -223,6 +223,8 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
+import streamlit as st
+import pandas as pd
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -291,21 +293,19 @@ st.markdown("""
 # Displaying the header with the title
 st.markdown('<div class="title">Download Quran Paras</div>', unsafe_allow_html=True)
 
-# Debugging: Check if pdf_files is not empty
-if pdf_files:
-    st.write(f"Total {len(pdf_files)} Paras available.")
-else:
-    st.write("No paras available.")
-
-# Displaying the table with para names and download buttons
-for para in pdf_files:
+# Creating a list of dictionaries with Sl. No, Para Name, and Download Button URL
+data = []
+for idx, para in enumerate(pdf_files, start=1):
     para_name = f"{para['name']} ({para['arabic_name']})"
-    file_url = f"{github_repo_url}{para['file']}"
-    
-    # Display Para name and corresponding download button
-    st.write(f"**{para_name}**")
-    st.markdown(f"[Download PDF]({file_url})", unsafe_allow_html=True)
-    st.markdown("---")  # Add a line between each para
+    download_url = f"{github_repo_url}{para['file']}"
+    data.append({"Sl. No": idx, "Para Name": para_name, "Download PDF": f"[Download]({download_url})"})
+
+# Converting to DataFrame for better table representation
+df = pd.DataFrame(data)
+
+# Displaying the DataFrame as a table
+st.table(df)
+
 
 
 st.markdown('</div>', unsafe_allow_html=True)
