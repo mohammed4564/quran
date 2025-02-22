@@ -192,67 +192,161 @@ st.markdown("""
         <tr><td>114</td><td>Surah An-Nas</td><td><a href="https://youtu.be/X5vR4paBKrE?feature=shared">Watch</a></td></tr>
     </table>
 """, unsafe_allow_html=True)
-import streamlit as st
 
-# Adding the custom heading using HTML
-st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        Quran Surahs <span style="color: #2980b9;">PDF Download</span>
-    </p>
-""", unsafe_allow_html=True)
 
-# List of Surah names with their corresponding PDF file names
-surahs = [
-    {"number": 1, "name": "Surah Al-Fatiha", "file": "Surah_Al_Fatiha.pdf"},
-    {"number": 2, "name": "Surah Al-Baqarah", "file": "Surah_Al_Baqarah.pdf"},
-    {"number": 3, "name": "Surah Aal-E-Imran", "file": "Surah_Aal_E_Imran.pdf"},
-    {"number": 4, "name": "Surah An-Nisa", "file": "Surah_An_Nisa.pdf"},
-    {"number": 5, "name": "Surah Al-Ma'idah", "file": "Surah_Al_Maidah.pdf"},
-    {"number": 6, "name": "Surah Al-An'am", "file": "Surah_Al_Anam.pdf"},
-    {"number": 7, "name": "Surah Al-A'raf", "file": "Surah_Al_Araf.pdf"},
-    {"number": 8, "name": "Surah Al-Anfal", "file": "Surah_Al_Anfal.pdf"},
-    {"number": 9, "name": "Surah At-Tawbah", "file": "Surah_At_Tawbah.pdf"},
-    {"number": 10, "name": "Surah Yunus", "file": "Surah_Yunus.pdf"},
-    {"number": 11, "name": "Surah Hud", "file": "Surah_Hud.pdf"},
-    {"number": 12, "name": "Surah Yusuf", "file": "Surah_Yusuf.pdf"},
-    {"number": 13, "name": "Surah Ibrahim", "file": "Surah_Ibrahim.pdf"},
-    {"number": 14, "name": "Surah Al-Hijr", "file": "Surah_Al_Hijr.pdf"},
-    {"number": 15, "name": "Surah An-Nahl", "file": "Surah_An_Nahl.pdf"},
-    {"number": 16, "name": "Surah Al-Isra", "file": "Surah_Al_Isra.pdf"},
-    {"number": 17, "name": "Surah Al-Kahf", "file": "Surah_Al_Kahf.pdf"},
-    {"number": 18, "name": "Surah Maryam", "file": "Surah_Maryam.pdf"},
-    {"number": 19, "name": "Surah Ta-Ha", "file": "Surah_Ta_Ha.pdf"},
-    {"number": 20, "name": "Surah Al-Anbiya", "file": "Surah_Al_Anbiya.pdf"},
-    {"number": 21, "name": "Surah Al-Hajj", "file": "Surah_Al_Hajj.pdf"},
-    {"number": 22, "name": "Surah Al-Mu'minun", "file": "Surah_Al_Muminun.pdf"},
-    {"number": 23, "name": "Surah An-Nur", "file": "Surah_An_Nur.pdf"},
-    {"number": 24, "name": "Surah Al-Furqan", "file": "Surah_Al_Furqan.pdf"},
-    {"number": 25, "name": "Surah Ash-Shu'ara", "file": "Surah_Ash_Shuara.pdf"},
-    {"number": 26, "name": "Surah An-Naml", "file": "Surah_An_Naml.pdf"},
-    {"number": 27, "name": "Surah Al-Ahqaf", "file": "Surah_Al_Ahqaf.pdf"},
-    {"number": 28, "name": "Surah Az-Zariyat", "file": "Surah_Az_Zariyat.pdf"},
-    {"number": 29, "name": "Surah Al-Mujadila", "file": "Surah_Al_Mujadila.pdf"},
-    {"number": 30, "name": "Surah Al-Buruj", "file": "Surah_Al_Buruj.pdf"}
-]
-
-# Displaying the table
-table = '<table style="width:100%; border-collapse: collapse;">'
-table += "<tr><th>Sl.No</th><th>Para Name</th><th>Download PDF</th></tr>"
-
-# Adding rows for each Surah
-for surah in surahs:
-    table += f"""
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
     <tr>
-        <td>{surah['number']}</td>
-        <td>{surah['name']}</td>
-        <td><a href="{surah['file']}">📄 Download PDF</a></td>
+        <th>Sl.No</th>
+        <th>Surah Name</th>
+        <th>Download PDF</th>
     </tr>
-    """
+    <tr>
+        <td>2</td>
+        <td>Surah Al-Baqarah</td>
+        <td><a href="Surah_Al_Baqarah.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Surah Aal-E-Imran</td>
+        <td><a href="Surah_Aal_E_Imran.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Surah An-Nisa</td>
+        <td><a href="Surah_An_Nisa.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Surah Al-Ma'idah</td>
+        <td><a href="Surah_Al_Maidah.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Surah Al-An'am</td>
+        <td><a href="Surah_Al_Anam.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Surah Al-A'raf</td>
+        <td><a href="Surah_Al_Araf.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Surah Al-Anfal</td>
+        <td><a href="Surah_Al_Anfal.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Surah At-Tawbah</td>
+        <td><a href="Surah_At_Tawbah.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Surah Yunus</td>
+        <td><a href="Surah_Yunus.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Surah Hud</td>
+        <td><a href="Surah_Hud.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Surah Yusuf</td>
+        <td><a href="Surah_Yusuf.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Surah Ibrahim</td>
+        <td><a href="Surah_Ibrahim.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Surah Al-Hijr</td>
+        <td><a href="Surah_Al_Hijr.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Surah An-Nahl</td>
+        <td><a href="Surah_An_Nahl.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Surah Al-Isra</td>
+        <td><a href="Surah_Al_Isra.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Surah Al-Kahf</td>
+        <td><a href="Surah_Al_Kahf.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Surah Maryam</td>
+        <td><a href="Surah_Maryam.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Surah Ta-Ha</td>
+        <td><a href="Surah_Ta_Ha.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Surah Al-Anbiya</td>
+        <td><a href="Surah_Al_Anbiya.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>Surah Al-Hajj</td>
+        <td><a href="Surah_Al_Hajj.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>Surah Al-Mu'minun</td>
+        <td><a href="Surah_Al_Muminun.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>Surah An-Nur</td>
+        <td><a href="Surah_An_Nur.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>Surah Al-Furqan</td>
+        <td><a href="Surah_Al_Furqan.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>Surah Ash-Shu'ara</td>
+        <td><a href="Surah_Ash_Shuara.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>Surah An-Naml</td>
+        <td><a href="Surah_An_Naml.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>Surah Al-Ahqaf</td>
+        <td><a href="Surah_Al_Ahqaf.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>Surah Az-Zariyat</td>
+        <td><a href="Surah_Az_Zariyat.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>Surah Al-Mujadila</td>
+        <td><a href="Surah_Al_Mujadila.pdf">📄 Download PDF</a></td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>Surah Al-Buruj</td>
+        <td><a href="Surah_Al_Buruj.pdf">📄 Download PDF</a></td>
+    </tr>
+</table>
 
-table += "</table>"
-
-# Display the table in the Streamlit app
-st.markdown(table, unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
