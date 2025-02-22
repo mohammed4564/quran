@@ -223,9 +223,7 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
-
 import streamlit as st
-import pandas as pd
 
 # Adding custom CSS for styling the app
 st.markdown("""
@@ -244,7 +242,7 @@ st.markdown("""
             font-size: 14px;
         }
         .table th {
-            background-color: #4CAF50;
+            background-color: #2980b9;
             color: white;
             font-weight: bold;
             font-size: 16px;
@@ -328,32 +326,19 @@ pdf_files = [
     {"name": "Para 30: Al-Buruj", "arabic_name": "البروج", "file": "Holy-Quran-Para-30.pdf"}
 ]
 
-# Displaying the table with titles in blue
-st.markdown("""
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="blue-text">Sl.No</th>
-                <th class="blue-text">Para Name</th>
-                <th class="blue-text">Download PDF</th>
-            </tr>
-        </thead>
-        <tbody>
-""", unsafe_allow_html=True)
+# Create a DataFrame for proper tabular structure
+df = pd.DataFrame(pdf_files)
 
-# Iterating over the list to display the Paras in the table
-for i, para in enumerate(pdf_files, start=1):
+# Display the table
+st.table(df[['name', 'arabic_name']].style.applymap(lambda x: 'color: #2980b9', subset=['name']).hide_index())
+
+# Adding download buttons for each row
+for i, para in enumerate(pdf_files):
     st.markdown(f"""
-        <tr>
-            <td>{i}</td>
-            <td>{para["name"]} ({para["arabic_name"]})</td>
-            <td><a href="{github_repo_url}{para['file']}" target="_blank" class="download-btn">
-                    <i class="pdf-icon">📄</i> Download PDF</a></td>
-        </tr>
+        <a href="{github_repo_url}{para['file']}" target="_blank" class="download-btn">
+            📄 Download PDF - {para['name']}
+        </a><br><br>
     """, unsafe_allow_html=True)
-
-# Closing the table
-st.markdown("</tbody></table>", unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
