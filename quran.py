@@ -97,7 +97,6 @@ st.markdown("""
 
 # Table with all 114 links
 st.write("""
-    <html>
         <body>
             <table>
         <tr><th>Surah Number</th><th>Surah Name</th><th>Link</th></tr>
@@ -217,7 +216,6 @@ st.write("""
         <tr><td>114</td><td>Surah An-Nas</td><td><a href="https://youtu.be/X5vR4paBKrE?feature=shared">Watch</a></td></tr>
            </table>
         </body>
-    </html>
 """)
 
         
