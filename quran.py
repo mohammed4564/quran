@@ -223,6 +223,7 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
+
 import streamlit as st
 import pandas as pd
 
@@ -276,13 +277,17 @@ st.markdown("""
             font-size: 20px;
             color: #4CAF50;
         }
+        .blue-text {
+            color: #2980b9;
+            font-weight: bold;
+        }
     </style>
 """, unsafe_allow_html=True)
 
 # Adding the custom heading using HTML
 st.markdown("""
     <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        View & Read the <span style="color: #2980b9;">Quran</span> PDF
+        Quran Paras <span style="color: #2980b9;">PDF Download</span>
     </p>
 """, unsafe_allow_html=True)
 
@@ -323,22 +328,32 @@ pdf_files = [
     {"name": "Para 30: Al-Buruj", "arabic_name": "البروج", "file": "Holy-Quran-Para-30.pdf"}
 ]
 
-# Streamlit UI
-st.title('Quran Paras PDF Download')
+# Displaying the table with titles in blue
+st.markdown("""
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="blue-text">Sl.No</th>
+                <th class="blue-text">Para Name</th>
+                <th class="blue-text">Download PDF</th>
+            </tr>
+        </thead>
+        <tbody>
+""", unsafe_allow_html=True)
 
-# Creating a list of dictionaries with Para Name, Download Button URL, and Serial Number
-data = []
-for idx, para in enumerate(pdf_files, start=1):
-    para_name = f"{para['name']} ({para['arabic_name']})"
-    download_url = f"{github_repo_url}{para['file']}"
-    data.append({"Sl.No": idx, "Para Name": para_name, "Download PDF": f"📄 [Download]({download_url})"})
+# Iterating over the list to display the Paras in the table
+for i, para in enumerate(pdf_files, start=1):
+    st.markdown(f"""
+        <tr>
+            <td>{i}</td>
+            <td>{para["name"]} ({para["arabic_name"]})</td>
+            <td><a href="{github_repo_url}{para['file']}" target="_blank" class="download-btn">
+                    <i class="pdf-icon">📄</i> Download PDF</a></td>
+        </tr>
+    """, unsafe_allow_html=True)
 
-# Converting to DataFrame for better table representation
-df = pd.DataFrame(data)
-
-# Displaying the DataFrame as a table with Streamlit styling
-st.table(df)
-
+# Closing the table
+st.markdown("</tbody></table>", unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
