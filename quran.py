@@ -44,7 +44,13 @@ st.markdown("""
     </h1>
 """, unsafe_allow_html=True)
 
-st.write("View & Read the Quran PDF")
+# Styling the text
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
+        View & Read the <span style="color: #2980b9;">Quran</span> PDF
+    </p>
+""", unsafe_allow_html=True)
+
 webpage_urly = 'https://www.islamicnet.com/quran.php'
 st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
