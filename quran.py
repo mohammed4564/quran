@@ -13,10 +13,21 @@ st.markdown("""
 # Content inside the scrollable container
 st.markdown('<div class="scrollable-container">', unsafe_allow_html=True)
 
-st.write('''The **Quran** is the holy book of Islam, revealed to Prophet Muhammad (PBUH) over 23 years, 
-containing 114 chapters and over 6,000 verses. It provides guidance on theology, morality, and law,
-emphasizing the oneness of God and the Day of Judgment. The Quran is central to Islamic worship and
-remains unchanged since its revelation.''')
+import streamlit as st
+
+# Using Markdown with HTML for color styling
+st.markdown("""
+    <p style="color: #2c3e50; font-size: 18px;">
+        The <strong style="color: #e74c3c;">Quran</strong> is the eternal and divine scripture of Islam, a radiant beacon of light 
+        that has guided humanity for over 1,400 years. Revealed to the Prophet Muhammad (PBUH) over 23 years, it is a testament to the 
+        infinite wisdom and mercy of Allah. With its 114 chapters (Surahs) and over 6,000 verses (Ayahs), it provides profound guidance 
+        on matters of faith, morality, social justice, and personal conduct. Every word in the Quran is a call to reflection, an invitation 
+        to live in harmony with the Creator and with creation, emphasizing the oneness of Allah, the certainty of the Day of Judgment, and 
+        the principles of compassion, kindness, and truth. The Quran remains preserved in its original form, unchanged since its revelation, 
+        offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
+    </p>
+""", unsafe_allow_html=True)
+
 
 st.title("Islamic Resource Center")
 
