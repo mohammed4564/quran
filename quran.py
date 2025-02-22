@@ -223,8 +223,62 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
+
 import streamlit as st
 import pandas as pd
+
+# Adding custom CSS for styling the app at the top
+st.markdown("""
+    <style>
+        .title {
+            color: #4CAF50;
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tr:nth-child(odd) {
+            background-color: #e9f7ef;
+        }
+        .table tr:hover {
+            background-color: #ddd;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+        .para-name {
+            color: #3e8e41;
+            font-weight: bold;
+        }
+        .pdf-icon {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -266,45 +320,17 @@ pdf_files = [
 # Streamlit UI
 st.title('Quran Paras PDF Download')
 
-# Adding custom CSS for styling the app
-st.markdown("""
-    <style>
-        .title {
-            color: #4CAF50;
-            font-size: 36px;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        .download-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .download-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# Displaying the header with the title
-st.markdown('<div class="title">Download Quran Paras</div>', unsafe_allow_html=True)
-
-# Creating a list of dictionaries with Para Name and Download Button URL, without index number
+# Creating a list of dictionaries with Para Name, Download Button URL, and Serial Number
 data = []
-for para in pdf_files:
+for idx, para in enumerate(pdf_files, start=1):
     para_name = f"{para['name']} ({para['arabic_name']})"
     download_url = f"{github_repo_url}{para['file']}"
-    # Add the PDF icon to the download button
-    data.append({"Para Name": para_name, "Download PDF": f"📄 [Download]({download_url})"})
+    data.append({"Sl.No": idx, "Para Name": para_name, "Download PDF": f"📄 [Download]({download_url})"})
 
 # Converting to DataFrame for better table representation
 df = pd.DataFrame(data)
 
-# Displaying the DataFrame as a table
+# Displaying the DataFrame as a table with Streamlit styling
 st.table(df)
 
 
