@@ -51,49 +51,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Display the table of Quran Paras
-st.write("### List of Quran Paras")
-st.write(f"Total {len(pdf_files)} Paras available.")
-
-# Create a table with Serial No., Para Name (Arabic & English), and a download button
-table_data = []
-for idx, pdf in enumerate(pdf_files, start=1):
-    para_name = f"{pdf['name']} ({pdf['arabic_name']})"
-    file_name = pdf["file"]
-    download_link = f"{github_repo_url}{file_name}"
-
-    # Add row to the table with serial number, para name, and a download link
-    table_data.append([idx, para_name, download_link])
-
-# Display the table using Streamlit's table function
-st.write("### Quran Paras Table")
-st.markdown("""
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Serial No.</th>
-                <th>Para Name (Arabic & English)</th>
-                <th>Download</th>
-            </tr>
-        </thead>
-        <tbody>
-""", unsafe_allow_html=True)
-
-# Adding the table rows with alternating colors and download links
-for idx, pdf in enumerate(pdf_files, start=1):
-    para_name = f"{pdf['name']} ({pdf['arabic_name']})"
-    download_link = f"{github_repo_url}{pdf['file']}"
-    st.markdown(f"""
-        <tr>
-            <td>{idx}</td>
-            <td>{para_name}</td>
-            <td><a href="{download_link}" class="download-btn" target="_blank">📄 Download</a></td>
-        </tr>
-    """, unsafe_allow_html=True)
-
-st.markdown("</tbody></table>", unsafe_allow_html=True)
-
-
 
 webpage_urly = 'https://www.islamicnet.com/quran.php'
 st.markdown(f'<iframe src="{webpage_urly}" width="800" height="600"></iframe>', unsafe_allow_html=True)
@@ -267,8 +224,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-import streamlit as st
-
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
 
@@ -335,6 +290,12 @@ st.markdown("""
 
 # Displaying the header with the title
 st.markdown('<div class="title">Download Quran Paras</div>', unsafe_allow_html=True)
+
+# Debugging: Check if pdf_files is not empty
+if pdf_files:
+    st.write(f"Total {len(pdf_files)} Paras available.")
+else:
+    st.write("No paras available.")
 
 # Displaying the table with para names and download buttons
 for para in pdf_files:
