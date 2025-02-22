@@ -37,9 +37,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-
-
-
 # Adding custom CSS for styling the app
 st.markdown("""
     <style>
@@ -141,21 +138,43 @@ pdf_files = [
     {"name": "Para 30: Al-Buruj", "arabic_name": "البروج", "file": "Holy-Quran-Para-30.pdf"}
 ]
 
-# Displaying the table with titles in blue
-table_data = []
-for i, para in enumerate(pdf_files, start=1):
-    row = [
-        i, 
-        f"{para['name']} ({para['arabic_name']})",
-        f"<a href='{github_repo_url}{para['file']}' target='_blank' class='download-btn'>📄 Download PDF</a>"
-    ]
-    table_data.append(row)
+# Create a DataFrame for the table
+df = pd.DataFrame(pdf_files)
 
-# Convert list to DataFrame and display the table in Streamlit
-df = pd.DataFrame(table_data, columns=["Sl.No", "Para Name", "Download PDF"])
-st.write(df.to_html(escape=False), unsafe_allow_html=True)
+# Displaying the table with downloadable links and video links
+st.markdown("""
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Para</th>
+                <th>PDF Download</th>
+                <th>YouTube Recitation</th>
+            </tr>
+        </thead>
+        <tbody>
+""", unsafe_allow_html=True)
 
+# Populate the table with the Quran Para data
+for index, row in df.iterrows():
+    para_name = row['name']
+    pdf_url = f"{github_repo_url}{row['file']}"
+    youtube_url = f"https://www.youtube.com/results?search_query={para_name} quran recitation"
+    
+    st.markdown(f"""
+        <tr>
+            <td class="para-name">{para_name} ({row['arabic_name']})</td>
+            <td><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
+            <td><a href="{youtube_url}" target="_blank" class="download-btn">Watch Recitation</a></td>
+        </tr>
+    """, unsafe_allow_html=True)
 
+st.markdown("""
+        </tbody>
+    </table>
+""", unsafe_allow_html=True)
+
+# Close scrollable container
+st.markdown('</div>', unsafe_allow_html=True)
 
 
 # Styling the text
