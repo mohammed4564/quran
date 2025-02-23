@@ -334,6 +334,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+# Footer section
+st.markdown(
+    """
+    <footer style="text-align: center; font-size: 14px;">
+        <p>Powered by <a href="https://github.com" target="_blank">Your Name</a></p>
+    </footer>
+    """, 
+    unsafe_allow_html=True
+)
+
 
 st.markdown('</div>', unsafe_allow_html=True)
 
