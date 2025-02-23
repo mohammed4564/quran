@@ -177,41 +177,41 @@ st.markdown("""
 st.markdown('</div>', unsafe_allow_html=True)
 
 
-# Styling the text
-st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
-        Full <span style="color: #8e44ad;">Quran</span> Recitation <span style="color: #f39c12;">Videos</span>
-    </p>
-""", unsafe_allow_html=True)
+# # Styling the text
+# st.markdown("""
+#     <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
+#         Full <span style="color: #8e44ad;">Quran</span> Recitation <span style="color: #f39c12;">Videos</span>
+#     </p>
+# """, unsafe_allow_html=True)
 
-# CSS to center-align the table and apply some styling
-st.markdown("""
-    <style>
-        table {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            text-align: center;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        td a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        td a:hover {
-            text-decoration: underline;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# # CSS to center-align the table and apply some styling
+# st.markdown("""
+#     <style>
+#         table {
+#             margin-left: auto;
+#             margin-right: auto;
+#             width: 80%;
+#             text-align: center;
+#             border-collapse: collapse;
+#         }
+#         th, td {
+#             padding: 10px;
+#             border: 1px solid #ddd;
+#         }
+#         th {
+#             background-color: #f2f2f2;
+#         }
+#         td a {
+#             color: #1a73e8;
+#             text-decoration: none;
+#         }
+#         td a:hover {
+#             text-decoration: underline;
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
-# Table with all 114 links
+# Updated table with target="_blank" added to each link
 st.markdown("""
      <table>
         <tr><th>Surah Number</th><th>Surah Name</th><th>Link</th></tr>
