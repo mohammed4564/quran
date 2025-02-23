@@ -199,10 +199,14 @@ st.markdown("""
             border: 1px solid #ddd;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #4CAF50;  /* Green header color */
+            color: white;  /* White text color for the header */
+        }
+        td {
+            background-color: #f9f9f9;  /* Light background color for table rows */
         }
         td a {
-            color: #1a73e8;
+            color: #1a73e8;  /* Link color */
             text-decoration: none;
         }
         td a:hover {
@@ -332,18 +336,6 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
-
-# Updated table with target="_blank" added to each link
-st.markdown("""
-     <table>
-        <tr><th>Surah Number</th><th>Surah Name</th><th>Link</th></tr>
-        <tr><td>1</td><td>Surah Al-Fatiha</td><td><a href="https://youtu.be/UDvh63xHVa0?feature=shared" target="_blank">Watch</a></td></tr>
-        <tr><td>2</td><td>Surah Al-Baqara</td><td><a href="https://youtu.be/8x_URBJW5Dk?feature=shared" target="_blank">Watch</a></td></tr>
-        <tr><td>3</td><td>Surah Aali Imran</td><td><a href="https://youtu.be/mNqoSW_5SmA?feature=shared" target="_blank">Watch</a></td></tr>
-        <tr><td>4</td><td>Surah An-Nisa</td><td><a href="https://youtu.be/fMo163Ya3SY?feature=shared" target="_blank">Watch</a></td></tr>
-        <!-- Add the rest of your Surah links here -->
-    </table>
-""", unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
