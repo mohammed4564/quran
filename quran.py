@@ -185,6 +185,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # CSS to center-align the table and apply some styling
+# CSS to center-align the table and apply some styling
 st.markdown("""
     <style>
         table {
@@ -199,14 +200,10 @@ st.markdown("""
             border: 1px solid #ddd;
         }
         th {
-            background-color: #4CAF50;  /* Green header color */
-            color: white;  /* White text color for the header */
-        }
-        td {
-            background-color: #f9f9f9;  /* Light background color for table rows */
+            background-color: #f2f2f2;
         }
         td a {
-            color: #1a73e8;  /* Link color */
+            color: #1a73e8;
             text-decoration: none;
         }
         td a:hover {
