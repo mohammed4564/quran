@@ -211,7 +211,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-Updated table with target="_blank" added to each link
+#Updated table with target="_blank" added to each link
 st.markdown("""
      <table>
         <tr><th>Surah Number</th><th>Surah Name</th><th>Link</th></tr>
