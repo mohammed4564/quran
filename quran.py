@@ -37,55 +37,57 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-# # Adding custom CSS for styling the app
-# st.markdown("""
-#     <style>
-#         .title {
-#             font-size: 36px;
-#             text-align: center;
-#             font-weight: bold;
-#             margin-bottom: 30px;
-#         }
-#         .table th, .table td {
-#             padding: 12px;
-#             text-align: left;
-#             border: 1px solid #ddd;
-#             font-size: 14px;
-#         }
-#         .table th {
-#             color: #333;  # Dark text for readability
-#             font-weight: bold;
-#             font-size: 16px;
-#         }
-#         .table tr:nth-child(even) {
-#         }
-#         .table tr:nth-child(odd) {
-#         }
-#         .table tr:hover {
-#         }
-#         .download-btn {
-#             color: white;
-#             padding: 10px;
-#             border: none;
-#             cursor: pointer;
-#             border-radius: 5px;
-#         }
-#         .download-btn:hover {
-#         }
-#         .para-name {
-#             color: #333;  # Neutral text color for the names
-#             font-weight: bold;
-#         }
-#         .pdf-icon {
-#             font-size: 20px;
-#             color: #007BFF;  # Changed to blue to match download button
-#         }
-#         .blue-text {
-#             color: #007BFF;  # Blue color for any extra text if needed
-#             font-weight: bold;
-#         }
-#     </style>
-# """, unsafe_allow_html=True)
+
+
+# Adding custom CSS for styling the app
+st.markdown("""
+    <style>
+        .title {
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .table th {
+            color: #333;  # Dark text for readability
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .table tr:nth-child(even) {
+        }
+        .table tr:nth-child(odd) {
+        }
+        .table tr:hover {
+        }
+        .download-btn {
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+        }
+        .para-name {
+            color: #333;  # Neutral text color for the names
+            font-weight: bold;
+        }
+        .pdf-icon {
+            font-size: 20px;
+            color: #007BFF;  # Changed to blue to match download button
+        }
+        .blue-text {
+            color: #007BFF;  # Blue color for any extra text if needed
+            font-weight: bold;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Adding the custom heading using HTML
 st.markdown("""
@@ -170,7 +172,7 @@ st.markdown("""
 
 
 
-# # Styling the text
+# Styling the text
 st.markdown("""
     <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
         Full <span style="color: #8e44ad;">Quran</span> Recitation <span style="color: #f39c12;">Videos</span>
