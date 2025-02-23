@@ -37,10 +37,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-
-import streamlit as st
-import pandas as pd
-
 # Adding custom CSS for styling the app
 st.markdown("""
     <style>
@@ -50,59 +46,54 @@ st.markdown("""
             font-weight: bold;
             margin-bottom: 30px;
         }
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
         .table th, .table td {
             padding: 12px;
-            text-align: left;
+            text-align: center;
             border: 1px solid #ddd;
             font-size: 14px;
         }
         .table th {
-            color: #333;  /* Dark text for readability */
+            color: #333;
             font-weight: bold;
             font-size: 16px;
-            background-color: #f2f2f2;  /* Light gray background for headers */
         }
-        .table td {
-            background-color: #ffffff;  /* White for table rows */
-            text-align: left;  /* Adjust content to the left */
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
-        .table tr:nth-child(even) td {
-            background-color: #f9f9f9;  /* Light gray for even rows */
+        .table tr:nth-child(odd) {
+            background-color: #e9f7ef;
         }
-        .table tr:hover td {
-            background-color: #f1f1f1;  /* Light hover effect */
+        .table tr:hover {
+            background-color: #ddd;
         }
         .download-btn {
-            background-color: #007BFF;
             color: white;
-            padding: 10px 20px;
-            border: none;
+            padding: 10px;
+            border: 1px solid #ddd; /* Border around button */
             cursor: pointer;
             border-radius: 5px;
+            background-color: transparent; /* Remove background color */
             text-decoration: none;
-            display: inline-block;  /* To make the button appear as an inline element */
-            width: 100%;  /* Ensure the download button takes full width of its cell */
-            box-sizing: border-box;  /* Include padding in width */
-            text-align: center;
         }
         .download-btn:hover {
-            background-color: #0056b3;
+            background-color: #ddd; /* Add hover effect */
         }
         .para-name {
-            color: #333;  /* Neutral text color for the names */
+            color: #333;
             font-weight: bold;
-            word-break: break-word;  /* Allow long para names to break properly */
         }
-        .sl-no-col {
-            width: 5%;  /* Sl. No. column is small */
+        .pdf-icon {
+            font-size: 20px;
+            color: #007BFF;
         }
-        .para-col, .download-col {
-            width: 47%;  /* Both Para and Download columns are equally divided */
+        .blue-text {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Consistent column widths for all columns */
+        .table th, .table td {
+            width: 33%; /* Ensure equal width for each column */
         }
     </style>
 """, unsafe_allow_html=True)
@@ -157,11 +148,14 @@ df = pd.DataFrame(pdf_files)
 # Display the table in a single HTML table structure
 st.markdown("""
     <table class="table">
-        <tr>
-            <th class="sl-no-col">Sl. No.</th>
-            <th class="para-col">Para</th>
-            <th class="download-col">PDF Download</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Para</th>
+                <th>PDF Download</th>
+            </tr>
+        </thead>
+        <tbody>
 """, unsafe_allow_html=True)
 
 # Populate the table with the Quran Para data and serial numbers
@@ -173,14 +167,15 @@ for index, row in df.iterrows():
     # Table rows populated with Sl. No., Para name, and PDF link
     st.markdown(f"""
         <tr>
-            <td class="sl-no-col">{sl_no}</td>
+            <td>{sl_no}</td>
             <td class="para-name">{para_name} ({row['arabic_name']})</td>
-            <td class="download-col"><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
+            <td><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
         </tr>
     """, unsafe_allow_html=True)
 
 # Closing the table properly
 st.markdown("""
+        </tbody>
     </table>
 """, unsafe_allow_html=True)
 
