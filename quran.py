@@ -94,7 +94,7 @@ st.markdown("""
             padding: 12px;
             text-align: center;
             border: 1px solid #ddd;
-            min-width: 260px;  /* Ensure columns have a fixed minimum width */
+            min-width: 240px;  /* Ensure columns have a fixed minimum width */
         }
         th {
             background-color: #f4f4f4;
