@@ -36,7 +36,6 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
-
 import streamlit as st
 import pandas as pd
 
@@ -91,6 +90,7 @@ st.markdown("""
             padding: 12px;
             text-align: center;
             border: 1px solid #ddd;
+            min-width: 120px; /* Allow column width to adjust based on content */
         }
         th {
             background-color: #f4f4f4;
@@ -130,6 +130,7 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
+
 
 
 
