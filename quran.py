@@ -86,9 +86,9 @@ st.markdown("""
     <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
         <thead>
             <tr>
-                <th style="padding: 15px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Sl. No.</th>
-                <th style="padding: 15px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Para</th>
-                <th style="padding: 15px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Download PDF</th>
+                <th style="padding: 10px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Sl. No.</th>
+                <th style="padding: 10px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Para</th>
+                <th style="padding: 10px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Download PDF</th>
             </tr>
         </thead>
         <tbody>
@@ -116,7 +116,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 
 
