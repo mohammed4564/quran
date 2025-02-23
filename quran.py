@@ -37,62 +37,62 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-# Adding custom CSS for styling the app
-st.markdown("""
-    <style>
-        .title {
-            color: #4CAF50;
-            font-size: 36px;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        .table th, .table td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-            font-size: 14px;
-        }
-        .table th {
-            background-color: #4CAF50;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .table tr:nth-child(odd) {
-            background-color: #e9f7ef;
-        }
-        .table tr:hover {
-            background-color: #ddd;
-        }
-        .download-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .download-btn:hover {
-            background-color: #45a049;
-        }
-        .para-name {
-            color: #3e8e41;
-            font-weight: bold;
-        }
-        .pdf-icon {
-            font-size: 20px;
-            color: #4CAF50;
-        }
-        .blue-text {
-            color: #2980b9;
-            font-weight: bold;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# # Adding custom CSS for styling the app
+# st.markdown("""
+#     <style>
+#         .title {
+#             color: #4CAF50;
+#             font-size: 36px;
+#             text-align: center;
+#             font-weight: bold;
+#             margin-bottom: 30px;
+#         }
+#         .table th, .table td {
+#             padding: 12px;
+#             text-align: left;
+#             border: 1px solid #ddd;
+#             font-size: 14px;
+#         }
+#         .table th {
+#             background-color: #4CAF50;
+#             color: white;
+#             font-weight: bold;
+#             font-size: 16px;
+#         }
+#         .table tr:nth-child(even) {
+#             background-color: #f9f9f9;
+#         }
+#         .table tr:nth-child(odd) {
+#             background-color: #e9f7ef;
+#         }
+#         .table tr:hover {
+#             background-color: #ddd;
+#         }
+#         .download-btn {
+#             background-color: #4CAF50;
+#             color: white;
+#             padding: 10px;
+#             border: none;
+#             cursor: pointer;
+#             border-radius: 5px;
+#         }
+#         .download-btn:hover {
+#             background-color: #45a049;
+#         }
+#         .para-name {
+#             color: #3e8e41;
+#             font-weight: bold;
+#         }
+#         .pdf-icon {
+#             font-size: 20px;
+#             color: #4CAF50;
+#         }
+#         .blue-text {
+#             color: #2980b9;
+#             font-weight: bold;
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
 # Adding the custom heading using HTML
 st.markdown("""
