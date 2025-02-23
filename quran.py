@@ -37,6 +37,7 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
+
 import streamlit as st
 import pandas as pd
 
@@ -84,7 +85,7 @@ df = pd.DataFrame(pdf_files)
 st.markdown("""
     <style>
         table {
-            width: 80%;  /* Adjust table width */
+            width: 90%;  /* Adjust table width */
             border-collapse: collapse;
             margin-left: 20px;  /* Move the table to the right */
             margin-bottom: 20px;  /* Add space below the table */
@@ -156,7 +157,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 
 
