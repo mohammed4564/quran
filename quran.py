@@ -36,6 +36,7 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
+
 import streamlit as st
 import pandas as pd
 
@@ -156,7 +157,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 
 # Styling the text
