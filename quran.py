@@ -105,8 +105,7 @@ st.markdown("""
             background-color: #e9f7ef;
         }
         .download-btn {
-            background-color: #007BFF;
-            color: white;
+            color: #007BFF;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
@@ -115,7 +114,7 @@ st.markdown("""
             align-items: center;
         }
         .download-btn:hover {
-            background-color: #0056b3;
+            text-decoration: underline;
         }
         .pdf-icon {
             margin-right: 10px;  /* Adds space between icon and text */
@@ -158,6 +157,7 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
+
 
 # Styling the text
 st.markdown("""
