@@ -185,32 +185,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # CSS to center-align the table and apply some styling
-# CSS to center-align the table and apply some styling
-st.markdown("""
-    <style>
-        table {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            text-align: center;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        td a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        td a:hover {
-            text-decoration: underline;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#         table {
+#             margin-left: auto;
+#             margin-right: auto;
+#             width: 80%;
+#             text-align: center;
+#             border-collapse: collapse;
+#         }
+#         th, td {
+#             padding: 10px;
+#             border: 1px solid #ddd;
+#         }
+#         th {
+#             background-color: #f2f2f2;
+#         }
+#         td a {
+#             color: #1a73e8;
+#             text-decoration: none;
+#         }
+#         td a:hover {
+#             text-decoration: underline;
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
 # Updated table with target="_blank" added to each link
 # st.markdown("""
