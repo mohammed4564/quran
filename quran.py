@@ -8,10 +8,10 @@ header_css = """
             background-color: #f1f1f1;
             padding: 10px 0;
             text-align: center;
-            font-size: 24px;
+            font-size: 21px;
             border-bottom: 3px solid black;
-            height: 1cm;
-            margin-bottom: 20px;
+            height: 2cm;
+            margin-bottom: 21px;
         }
         .footer {
             background-color: #f1f1f1;
@@ -367,7 +367,7 @@ st.markdown("""
 
 
 # Footer with border and height
-st.markdown('<div class="footer">Powered by Mohammed Umar | <a href="https://github.com" target="_blank">GitHub</a></div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Powered by Mohammed Umar </div>', unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
