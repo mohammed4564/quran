@@ -36,8 +36,6 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
-
-
 import streamlit as st
 import pandas as pd
 
@@ -81,20 +79,21 @@ pdf_files = [
 # Create a DataFrame for the table
 df = pd.DataFrame(pdf_files)
 
-# Table structure in markdown with header row
+# Table structure with styles and icons
 st.markdown("""
     <style>
         table {
-            width: 90%;  /* Adjust table width */
+            width: 100%;  /* Make the table take the full width */
             border-collapse: collapse;
-            margin-left: 20px;  /* Move the table to the right */
-            margin-bottom: 20px;  /* Add space below the table */
+            margin-left: auto;
+            margin-right: auto;
+            table-layout: fixed;  /* Ensures equal column widths */
         }
         th, td {
             padding: 12px;
             text-align: center;
             border: 1px solid #ddd;
-            min-width: 150px; /* Ensuring enough space for content */
+            min-width: 180px;  /* Ensure columns have a fixed minimum width */
         }
         th {
             background-color: #f4f4f4;
@@ -119,7 +118,7 @@ st.markdown("""
             background-color: #0056b3;
         }
         .pdf-icon {
-            margin-right: 10px; /* Space between icon and text */
+            margin-right: 10px;  /* Adds space between icon and text */
         }
     </style>
     <table>
@@ -139,7 +138,7 @@ for index, row in df.iterrows():
     pdf_url = f"{github_repo_url}{row['file']}"
     sl_no = index + 1  # Sl. No. starting from 1
 
-    # Adding rows to the table with PDF icon
+    # Adding rows to the table with PDF icon and download button
     st.markdown(f"""
         <tr>
             <td>{sl_no}</td>
@@ -157,7 +156,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 
 
