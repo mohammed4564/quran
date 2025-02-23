@@ -86,65 +86,50 @@ df = pd.DataFrame(pdf_files)
 
 # Table structure with styles and icons
 st.markdown("""
-   <style>
-    /* Ensure the body takes the full height and center the content */
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Full viewport height */
-        margin: 0;
-    }
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+            min-width: 250px;  /* Ensure columns have a fixed minimum width */
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #e9f7ef;
+        }
+        .download-btn {
+            color: #007BFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .download-btn:hover {
+            text-decoration: underline;
+        }
+        .pdf-icon {
+            margin-right: 10px;  /* Adds space between icon and text */
+        }
 
-    table {
-        width: 80%;  /* Adjust the width of the table as per your needs */
-        border-collapse: collapse;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    th, td {
-        padding: 12px;
-        text-align: center;
-        border: 1px solid #ddd;
-        min-width: 250px;  /* Ensure columns have a fixed minimum width */
-    }
-
-    th {
-        background-color: #f4f4f4;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-
-    tr:nth-child(odd) {
-        background-color: #e9f7ef;
-    }
-
-    .download-btn {
-        color: #007BFF;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .download-btn:hover {
-        text-decoration: underline;
-    }
-
-    .pdf-icon {
-        margin-right: 10px;  /* Adds space between icon and text */
-    }
-
-    /* Reduce the width of the Sl. No. column */
-    td:first-child, th:first-child {
-        min-width: 70px;  /* Reduce width of the first column (Sl. No.) */
-    }
-</style>
+        /* Reduce the width of the Sl. No. column */
+        td:first-child, th:first-child {
+            min-width: 70px;  /* Reduce width of the first column (Sl. No.) */
+        }
+    </style>
     <table>
         <tbody>
 """, unsafe_allow_html=True)
