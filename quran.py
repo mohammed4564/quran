@@ -94,14 +94,11 @@ st.markdown("""
             font-weight: bold;
             word-break: break-word;  /* Allow long para names to break properly */
         }
-        .para-col {
-            width: 40%;  /* Adjust the width for Para column */
-        }
-        .download-col {
-            width: 40%;  /* Adjust the width for the Download column */
-        }
         .sl-no-col {
-            width: 10%;  /* Adjust the width for Sl. No column */
+            width: 10%;  /* Sl. No. column is small */
+        }
+        .para-col, .download-col {
+            width: 45%;  /* Both Para and Download columns are equally divided */
         }
     </style>
 """, unsafe_allow_html=True)
@@ -182,7 +179,6 @@ for index, row in df.iterrows():
 st.markdown("""
     </table>
 """, unsafe_allow_html=True)
-
 
 
 # Styling the text
