@@ -167,13 +167,100 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
+###########################################################################################################################
 # URL of the MP3 file
 audio_url = 'https://qurancentral.com/audio/abdur-rahman-as-sudais'
 
 # Display audio player in Streamlit
 st.audio(audio_url)
 
+# List of Surahs and their MP3 file URLs
+surah_data = [
+    {"sl_no": 1, "surah_name": "Al-Fatiha", "audio_url": "https://raw.githubusercontent.com/your-username/your-repository-name/main/assets/Al-Fatiha.mp3"},
+    {"sl_no": 2, "surah_name": "Al-Baqarah", "audio_url": "https://raw.githubusercontent.com/your-username/your-repository-name/main/assets/Al-Baqarah.mp3"},
+    {"sl_no": 3, "surah_name": "Al-Imran", "audio_url": "https://raw.githubusercontent.com/your-username/your-repository-name/main/assets/Al-Imran.mp3"},
+    # Add more surahs here as needed
+]
+
+# Create DataFrame for table display
+df = pd.DataFrame(surah_data)
+
+# CSS to center-align the table and apply some styling
+st.markdown("""
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #e9f7ef;
+        }
+        .audio-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .audio-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Display the table with Surah names and audio player button
+st.markdown("""
+    <table>
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Surah Name</th>
+                <th>Audio</th>
+            </tr>
+        </thead>
+        <tbody>
+""", unsafe_allow_html=True)
+
+# Populate the table with Surah data and audio player
+for index, row in df.iterrows():
+    sl_no = row['sl_no']
+    surah_name = row['surah_name']
+    audio_url = row['audio_url']
+
+    st.markdown(f"""
+        <tr>
+            <td>{sl_no}</td>
+            <td>{surah_name}</td>
+            <td><a href="{audio_url}" target="_blank" class="audio-btn">Play Audio</a></td>
+        </tr>
+    """, unsafe_allow_html=True)
+
+# Closing the table properly
+st.markdown("""
+        </tbody>
+    </table>
+""", unsafe_allow_html=True)
+
+# Optional: Also show audio player inline
+for index, row in df.iterrows():
+    audio_url = row['audio_url']
+    st.audio(audio_url)
+
+#############################################################################################################################
 # Styling the text
 st.markdown("""
     <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
