@@ -173,7 +173,7 @@ import os
 import pandas as pd
 
 # Path to the folder containing your audio files
-audio_folder_path = "path/to/your/audio/files"  # Update with your folder path
+audio_folder_path = "quran_audio_folder/abdul-rahman-al-sudais-001-qurancentral.com-192 (1).mp3"  # Update with your folder path
 
 # List all the MP3 files in the directory
 mp3_files = [f for f in os.listdir(audio_folder_path) if f.endswith('.mp3')]
