@@ -168,6 +168,12 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 
+# URL of the MP3 file
+audio_url = 'https://qurancentral.com/audio/abdur-rahman-as-sudais'
+
+# Display audio player in Streamlit
+st.audio(audio_url)
+
 # Styling the text
 st.markdown("""
     <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
