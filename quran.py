@@ -37,69 +37,9 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-# Adding custom CSS for styling the app
-st.markdown("""
-    <style>
-        .title {
-            font-size: 36px;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        .table {
-            width: 100%;
-            border-collapse: collapse;  /* Ensures borders don't overlap */
-        }
-        .table th, .table td {
-            padding: 15px;  /* Adds space inside cells */
-            text-align: center;  /* Centers the text */
-            border: 1px solid #ddd;  /* Light grey border */
-            font-size: 14px;
-        }
-        .table th {
-            color: #333;  /* Dark text for readability */
-            font-weight: bold;
-            font-size: 16px;
-            background-color: #f4f4f4;  /* Light grey background for the header */
-        }
-        .table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .table tr:nth-child(odd) {
-            background-color: #e9f7ef;
-        }
-        .table tr:hover {
-            background-color: #ddd;  /* Add hover effect to rows */
-        }
-        .download-btn {
-            color: white;
-            padding: 10px;
-            border: 1px solid #007BFF;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-            background-color: #007BFF;  /* Blue background for the button */
-        }
-        .download-btn:hover {
-            background-color: #0056b3;  /* Darker blue on hover */
-        }
-        .para-name {
-            color: #333;  /* Text color for Para names */
-            font-weight: bold;
-        }
-        .pdf-icon {
-            font-size: 20px;
-            color: #007BFF;  /* Blue color for icons */
-        }
-    </style>
-""", unsafe_allow_html=True)
 
-# Adding the custom heading using HTML
-st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #e74c3c; text-align: center;">
-        Quran Paras <span style="color: #2980b9;">PDF Download</span>
-    </p>
-""", unsafe_allow_html=True)
+import streamlit as st
+import pandas as pd
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -141,31 +81,33 @@ pdf_files = [
 # Create a DataFrame for the table
 df = pd.DataFrame(pdf_files)
 
-# Display the table in a single HTML table structure
+# Table structure in markdown
 st.markdown("""
-    <table class="table">
+    <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
         <thead>
             <tr>
-                <th>Sl. No.</th>
-                <th>Para</th>
-                <th>PDF Download</th>
+                <th style="padding: 15px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Sl. No.</th>
+                <th style="padding: 15px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Para</th>
+                <th style="padding: 15px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Download PDF</th>
             </tr>
         </thead>
         <tbody>
 """, unsafe_allow_html=True)
 
-# Populate the table with the Quran Para data and serial numbers
+# Populate the table with data
 for index, row in df.iterrows():
     para_name = row['name']
     pdf_url = f"{github_repo_url}{row['file']}"
     sl_no = index + 1  # Sl. No. starting from 1
-    
-    # Table rows populated with Sl. No., Para name, and PDF link
+
+    # Adding rows to the table
     st.markdown(f"""
         <tr>
-            <td>{sl_no}</td>
-            <td class="para-name">{para_name} ({row['arabic_name']})</td>
-            <td><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
+            <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">{sl_no}</td>
+            <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">{para_name} ({row['arabic_name']})</td>
+            <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
+                <a href="{pdf_url}" target="_blank" style="background-color: #007BFF; color: white; padding: 10px; text-decoration: none; border-radius: 5px;">Download PDF</a>
+            </td>
         </tr>
     """, unsafe_allow_html=True)
 
@@ -174,6 +116,7 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
+
 
 
 
