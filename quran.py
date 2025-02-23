@@ -36,6 +36,7 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
+
 import streamlit as st
 import pandas as pd
 
@@ -119,6 +120,11 @@ st.markdown("""
         .pdf-icon {
             margin-right: 10px;  /* Adds space between icon and text */
         }
+
+        /* Reduce the width of the Sl. No. column */
+        td:first-child, th:first-child {
+            min-width: 60px;  /* Reduce width of the first column (Sl. No.) */
+        }
     </style>
     <table>
         <tbody>
@@ -157,7 +163,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 # Styling the text
 st.markdown("""
