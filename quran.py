@@ -38,7 +38,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-
 # Adding custom CSS for styling the app
 st.markdown("""
     <style>
@@ -48,42 +47,50 @@ st.markdown("""
             font-weight: bold;
             margin-bottom: 30px;
         }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
         .table th, .table td {
             padding: 12px;
-            text-align: left;
+            text-align: center;
             border: 1px solid #ddd;
             font-size: 14px;
+            width: 33.33%;  /* Ensure all columns are equally spaced */
         }
         .table th {
-            color: #333;  # Dark text for readability
+            color: #333;  /* Dark text for readability */
             font-weight: bold;
             font-size: 16px;
+            background-color: #f2f2f2;  /* Light gray background for headers */
         }
-        .table tr:nth-child(even) {
+        .table td {
+            background-color: #ffffff;  /* White for table rows */
         }
-        .table tr:nth-child(odd) {
+        .table tr:nth-child(even) td {
+            background-color: #f9f9f9;  /* Light gray for even rows */
         }
-        .table tr:hover {
+        .table tr:hover td {
+            background-color: #f1f1f1;  /* Light hover effect */
         }
         .download-btn {
+            background-color: #007BFF;
             color: white;
-            padding: 10px;
+            padding: 10px 20px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;  /* To make the button appear as an inline element */
+            width: 100%;  /* Ensure the download button takes full width of its cell */
+            box-sizing: border-box;  /* Include padding in width */
         }
         .download-btn:hover {
+            background-color: #0056b3;
         }
         .para-name {
-            color: #333;  # Neutral text color for the names
-            font-weight: bold;
-        }
-        .pdf-icon {
-            font-size: 20px;
-            color: #007BFF;  # Changed to blue to match download button
-        }
-        .blue-text {
-            color: #007BFF;  # Blue color for any extra text if needed
+            color: #333;  /* Neutral text color for the names */
             font-weight: bold;
         }
     </style>
