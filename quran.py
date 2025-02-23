@@ -94,12 +94,14 @@ st.markdown("""
             font-weight: bold;
             word-break: break-word;  /* Allow long para names to break properly */
         }
-        /* Optional: Adjust the size of each column based on content */
         .para-col {
-            width: 45%;  /* Adjust the width for Para column */
+            width: 40%;  /* Adjust the width for Para column */
         }
         .download-col {
             width: 40%;  /* Adjust the width for the Download column */
+        }
+        .sl-no-col {
+            width: 10%;  /* Adjust the width for Sl. No column */
         }
     </style>
 """, unsafe_allow_html=True)
@@ -155,7 +157,7 @@ df = pd.DataFrame(pdf_files)
 st.markdown("""
     <table class="table">
         <tr>
-            <th>Sl. No.</th>
+            <th class="sl-no-col">Sl. No.</th>
             <th class="para-col">Para</th>
             <th class="download-col">PDF Download</th>
         </tr>
@@ -170,9 +172,9 @@ for index, row in df.iterrows():
     # Table rows populated with Sl. No., Para name, and PDF link
     st.markdown(f"""
         <tr>
-            <td>{sl_no}</td>
+            <td class="sl-no-col">{sl_no}</td>
             <td class="para-name">{para_name} ({row['arabic_name']})</td>
-            <td><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
+            <td class="download-col"><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
         </tr>
     """, unsafe_allow_html=True)
 
