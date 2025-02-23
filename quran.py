@@ -170,11 +170,11 @@ st.markdown("""
 ###########################################################################################################################
 
 
-# Specify the URL of your audio file
-audio_file_url = "https://your_audio_storage.com/quran_audio_folder/001-al-fatihah.mp3"
+# Provide the correct path or URL to your audio file
+audio_file_path = "quran_audio_folder/001-al-fatihah.mp3"
 
 # Display the audio player in Streamlit
-st.audio(audio_file_url)
+st.audio(audio_file_path, format="audio/mp3")
 
 
 #############################################################################################################################
