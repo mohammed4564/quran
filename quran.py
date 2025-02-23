@@ -37,7 +37,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-
 # Adding custom CSS for styling the app
 st.markdown("""
     <style>
@@ -57,7 +56,6 @@ st.markdown("""
             text-align: center;
             border: 1px solid #ddd;
             font-size: 14px;
-            width: 33.33%;  /* Ensure all columns are equally spaced */
         }
         .table th {
             color: #333;  /* Dark text for readability */
@@ -67,6 +65,7 @@ st.markdown("""
         }
         .table td {
             background-color: #ffffff;  /* White for table rows */
+            text-align: left;  /* Adjust content to the left */
         }
         .table tr:nth-child(even) td {
             background-color: #f9f9f9;  /* Light gray for even rows */
@@ -93,6 +92,14 @@ st.markdown("""
         .para-name {
             color: #333;  /* Neutral text color for the names */
             font-weight: bold;
+            word-break: break-word;  /* Allow long para names to break properly */
+        }
+        /* Optional: Adjust the size of each column based on content */
+        .para-col {
+            width: 45%;  /* Adjust the width for Para column */
+        }
+        .download-col {
+            width: 40%;  /* Adjust the width for the Download column */
         }
     </style>
 """, unsafe_allow_html=True)
@@ -149,8 +156,8 @@ st.markdown("""
     <table class="table">
         <tr>
             <th>Sl. No.</th>
-            <th>Para</th>
-            <th>PDF Download</th>
+            <th class="para-col">Para</th>
+            <th class="download-col">PDF Download</th>
         </tr>
 """, unsafe_allow_html=True)
 
