@@ -95,10 +95,10 @@ st.markdown("""
             border-collapse: collapse;
         }
         th, td {
-            padding: 12px;
+            padding: 10px;
             text-align: center;
             border: 1px solid #ddd;
-            min-width: 250px;  /* Ensure columns have a fixed minimum width */
+            #min-width: 250px;  /* Ensure columns have a fixed minimum width */
         }
         th {
             background-color: #f4f4f4;
