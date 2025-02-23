@@ -36,7 +36,6 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
-
 import streamlit as st
 import pandas as pd
 
@@ -123,14 +122,16 @@ st.markdown("""
         }
     </style>
     <table>
-        <thead>
-            <tr>
-                <th>Sl. No.</th>
-                <th>Para Name</th>
-                <th>Download PDF</th>
-            </tr>
-        </thead>
         <tbody>
+""", unsafe_allow_html=True)
+
+# Add the first row (column names as part of data)
+st.markdown(f"""
+    <tr>
+        <td><strong>Sl. No.</strong></td>
+        <td><strong>Para Name</strong></td>
+        <td><strong>Download PDF</strong></td>
+    </tr>
 """, unsafe_allow_html=True)
 
 # Populate the table with data
@@ -157,7 +158,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 # Styling the text
 st.markdown("""
