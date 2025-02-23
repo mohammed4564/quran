@@ -37,6 +37,10 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
+
+import streamlit as st
+import pandas as pd
+
 # Adding custom CSS for styling the app
 st.markdown("""
     <style>
@@ -53,7 +57,7 @@ st.markdown("""
         }
         .table th, .table td {
             padding: 12px;
-            text-align: center;
+            text-align: left;
             border: 1px solid #ddd;
             font-size: 14px;
         }
@@ -95,10 +99,10 @@ st.markdown("""
             word-break: break-word;  /* Allow long para names to break properly */
         }
         .sl-no-col {
-            width: 10%;  /* Sl. No. column is small */
+            width: 5%;  /* Sl. No. column is small */
         }
         .para-col, .download-col {
-            width: 45%;  /* Both Para and Download columns are equally divided */
+            width: 47%;  /* Both Para and Download columns are equally divided */
         }
     </style>
 """, unsafe_allow_html=True)
