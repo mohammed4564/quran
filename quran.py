@@ -41,7 +41,6 @@ st.markdown("""
 st.markdown("""
     <style>
         .title {
-            color: #333;  # Changed color to dark gray for better readability
             font-size: 36px;
             text-align: center;
             font-weight: bold;
@@ -54,22 +53,17 @@ st.markdown("""
             font-size: 14px;
         }
         .table th {
-            background-color: #f2f2f2;  # Changed from green to light gray
             color: #333;  # Dark text for readability
             font-weight: bold;
             font-size: 16px;
         }
         .table tr:nth-child(even) {
-            background-color: #f9f9f9;  # Light gray rows for even rows
         }
         .table tr:nth-child(odd) {
-            background-color: #ffffff;  # White for odd rows
         }
         .table tr:hover {
-            background-color: #ddd;  # Light gray on hover
         }
         .download-btn {
-            background-color: #007BFF;  # Changed to blue for download button
             color: white;
             padding: 10px;
             border: none;
@@ -77,7 +71,6 @@ st.markdown("""
             border-radius: 5px;
         }
         .download-btn:hover {
-            background-color: #0056b3;  # Darker blue on hover
         }
         .para-name {
             color: #333;  # Neutral text color for the names
@@ -93,14 +86,6 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
-# Adding the custom heading using HTML
-st.markdown("""
-    <p style="font-size: 24px; font-weight: bold; color: #333; text-align: center;">
-        Quran Paras PDF Download
-    </p>
-""", unsafe_allow_html=True)
-
 
 # Adding the custom heading using HTML
 st.markdown("""
