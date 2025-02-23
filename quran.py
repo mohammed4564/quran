@@ -37,8 +37,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-import streamlit as st
-import pandas as pd
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -80,9 +78,16 @@ pdf_files = [
 # Create a DataFrame for the table
 df = pd.DataFrame(pdf_files)
 
-# Table structure in markdown (without headings)
+# Table structure in markdown with header row
 st.markdown("""
     <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
+        <thead>
+            <tr>
+                <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Sl. No.</th>
+                <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Para Name</th>
+                <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Download PDF</th>
+            </tr>
+        </thead>
         <tbody>
 """, unsafe_allow_html=True)
 
@@ -108,7 +113,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
 
 
 
