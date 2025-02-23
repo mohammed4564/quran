@@ -37,8 +37,12 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-import streamlit as st
-import pandas as pd
+# Styling the text
+st.markdown("""
+    <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
+        Downloads <span style="color: #8e44ad;">And</span> Read <span style="color: #f39c12;">quran</span>
+    </p>
+""", unsafe_allow_html=True)
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -84,11 +88,11 @@ df = pd.DataFrame(pdf_files)
 st.markdown("""
     <style>
         table {
-            width: 100%;  /* Make the table take the full width */
-            border-collapse: collapse;
             margin-left: auto;
             margin-right: auto;
-            table-layout: fixed;  /* Ensures equal column widths */
+            width: 80%;
+            text-align: center;
+            border-collapse: collapse;
         }
         th, td {
             padding: 12px;
