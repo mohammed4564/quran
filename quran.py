@@ -36,6 +36,7 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
+
 import streamlit as st
 import pandas as pd
 
@@ -88,15 +89,18 @@ st.markdown("""
         }
         th, td {
             padding: 12px;
-            text-align: center;
+            text-align: left;
             border: 1px solid #ddd;
-            min-width: 120px; /* Allow column width to adjust based on content */
+            min-width: 150px; /* Ensuring enough space for content */
         }
         th {
             background-color: #f4f4f4;
         }
         tr:nth-child(even) {
             background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) {
+            background-color: #e9f7ef;
         }
     </style>
     <table>
