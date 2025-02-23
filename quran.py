@@ -168,97 +168,164 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 ###########################################################################################################################
-# URL of the MP3 file
-audio_url = 'https://qurancentral.com/audio/abdur-rahman-as-sudais'
 
-# Display audio player in Streamlit
-st.audio(audio_url)
-
-# List of Surahs and their MP3 file URLs
-surah_data = [
-    {"sl_no": 1, "surah_name": "Al-Fatiha", "audio_url": "https://raw.githubusercontent.com/your-username/your-repository-name/main/assets/Al-Fatiha.mp3"},
-    {"sl_no": 2, "surah_name": "Al-Baqarah", "audio_url": "https://raw.githubusercontent.com/your-username/your-repository-name/main/assets/Al-Baqarah.mp3"},
-    {"sl_no": 3, "surah_name": "Al-Imran", "audio_url": "https://raw.githubusercontent.com/your-username/your-repository-name/main/assets/Al-Imran.mp3"},
-    # Add more surahs here as needed
+# List of all mp3 file names
+audio_files = [
+    "001-al-fatihah.mp3",
+    "002-al-baqarah.mp3",
+    "003-al-imran.mp3",
+    "004-an-nisa.mp3",
+    "005-al-maidah.mp3",
+    "006-al-anam.mp3",
+    "007-al-araf.mp3",
+    "008-al-anfal.mp3",
+    "009-at-taubah.mp3",
+    "010-yunus.mp3",
+    "011-hud.mp3",
+    "012-yusuf.mp3",
+    "013-ar-rad.mp3",
+    "014-ibrahim.mp3",
+    "015-al-hijr.mp3",
+    "016-an-nahl.mp3",
+    "017-al-isra.mp3",
+    "018-al-kahf.mp3",
+    "019-maryam.mp3",
+    "020-ta-ha.mp3",
+    "021-al-anbiya.mp3",
+    "022-al-hajj.mp3",
+    "023-al-muminun.mp3",
+    "024-an-nur.mp3",
+    "025-al-furqan.mp3",
+    "026-ash-shuara.mp3",
+    "027-an-naml.mp3",
+    "028-al-qasas.mp3",
+    "029-al-ankabut.mp3",
+    "030-ar-rum.mp3",
+    "031-luqman.mp3",
+    "032-as-sajdah.mp3",
+    "033-al-ahzab.mp3",
+    "034-saba.mp3",
+    "035-fatir.mp3",
+    "036-ya-sin.mp3",
+    "037-as-saffat.mp3",
+    "038-sad.mp3",
+    "039-az-zumar.mp3",
+    "040-ghafir.mp3",
+    "041-fussilat.mp3",
+    "042-ash-shura.mp3",
+    "043-az-zukhruf.mp3",
+    "044-ad-dukhan.mp3",
+    "045-al-jathiyah.mp3",
+    "046-al-ahqaf.mp3",
+    "047-muhammad.mp3",
+    "048-al-fath.mp3",
+    "049-al-hujurat.mp3",
+    "050-qaf.mp3",
+    "051-adh-dhariyat.mp3",
+    "052-at-tur.mp3",
+    "053-an-najm.mp3",
+    "054-al-qamar.mp3",
+    "055-ar-rahman.mp3",
+    "056-al-waqiah.mp3",
+    "057-al-hadid.mp3",
+    "058-al-mujadilah.mp3",
+    "059-al-hashr.mp3",
+    "060-al-mumtahanah.mp3",
+    "061-as-saff.mp3",
+    "062-al-jumuah.mp3",
+    "063-al-munafiqun.mp3",
+    "064-at-taghabun.mp3",
+    "065-at-talaq.mp3",
+    "066-at-tahrim.mp3",
+    "067-al-mulk.mp3",
+    "068-al-qalam.mp3",
+    "069-al-haqqah.mp3",
+    "070-al-maarij.mp3",
+    "071-nuh.mp3",
+    "072-al-jinn.mp3",
+    "073-al-muzammil.mp3",
+    "074-al-muddaththir.mp3",
+    "075-al-qiyamah.mp3",
+    "076-al-insan.mp3",
+    "077-al-mursalat.mp3",
+    "078-an-naba.mp3",
+    "079-an-naziat.mp3",
+    "080-abasa.mp3",
+    "081-at-takwir.mp3",
+    "082-al-infitar.mp3",
+    "083-al-mutaffifin.mp3",
+    "084-al-inshiqaq.mp3",
+    "085-al-buruj.mp3",
+    "086-at-tariq.mp3",
+    "087-al-ala.mp3",
+    "088-al-ghashiyah.mp3",
+    "089-al-fajr.mp3",
+    "090-al-balad.mp3",
+    "091-ash-shams.mp3",
+    "092-al-lail.mp3",
+    "093-ad-duha.mp3",
+    "094-ash-sharh.mp3",
+    "095-at-tin.mp3",
+    "096-al-alaq.mp3",
+    "097-al-qadr.mp3",
+    "098-al-baiyyinah.mp3",
+    "099-az-zalzalah.mp3",
+    "100-al-adiyat.mp3",
+    "101-al-qariah.mp3",
+    "102-at-takathur.mp3",
+    "103-al-asr.mp3",
+    "104-al-humazah.mp3",
+    "105-al-fil.mp3",
+    "106-quraish.mp3",
+    "107-al-maun.mp3",
+    "108-al-kauthar.mp3",
+    "109-al-kafirun.mp3",
+    "110-an-nasr.mp3",
+    "111-al-masad.mp3",
+    "112-al-ikhlas.mp3",
+    "113-al-falaq.mp3",
+    "114-an-nas.mp3"
 ]
 
-# Create DataFrame for table display
-df = pd.DataFrame(surah_data)
+# Streamlit page setup
+st.set_page_config(page_title="Quran Audio", layout="centered")
 
-# CSS to center-align the table and apply some styling
-st.markdown("""
-    <style>
-        table {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            text-align: center;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 12px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tr:nth-child(odd) {
-            background-color: #e9f7ef;
-        }
-        .audio-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .audio-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# Title of the page
+st.title("Quran Surahs Audio")
 
-# Display the table with Surah names and audio player button
-st.markdown("""
-    <table>
-        <thead>
-            <tr>
-                <th>Sl. No.</th>
-                <th>Surah Name</th>
-                <th>Audio</th>
-            </tr>
-        </thead>
-        <tbody>
-""", unsafe_allow_html=True)
+# Creating table headers
+table = """
+<table style="width:100%; border-collapse: collapse;">
+  <tr style="background-color:#f2f2f2;">
+    <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Sl. No</th>
+    <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Surah Name</th>
+    <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Audio</th>
+  </tr>
+"""
 
-# Populate the table with Surah data and audio player
-for index, row in df.iterrows():
-    sl_no = row['sl_no']
-    surah_name = row['surah_name']
-    audio_url = row['audio_url']
+# Loop through the list of files to create rows for each surah
+for idx, file in enumerate(audio_files, 1):
+    surah_name = file.split('-')[1].replace('.mp3', '').capitalize()  # Get the name of the surah
+    audio_url = f"https://github.com/mohammed4564/quran/raw/main/{file}"  # URL to the mp3 file in GitHub
 
-    st.markdown(f"""
-        <tr>
-            <td>{sl_no}</td>
-            <td>{surah_name}</td>
-            <td><a href="{audio_url}" target="_blank" class="audio-btn">Play Audio</a></td>
-        </tr>
-    """, unsafe_allow_html=True)
+    table += f"""
+    <tr>
+      <td style="text-align: center; border: 1px solid #ddd; padding: 10px;">{idx}</td>
+      <td style="text-align: center; border: 1px solid #ddd; padding: 10px;">{surah_name}</td>
+      <td style="text-align: center; border: 1px solid #ddd; padding: 10px;">
+        <audio controls>
+          <source src="{audio_url}" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    """
 
-# Closing the table properly
-st.markdown("""
-        </tbody>
-    </table>
-""", unsafe_allow_html=True)
+# Close table tag
+table += "</table>"
 
-# Optional: Also show audio player inline
-for index, row in df.iterrows():
-    audio_url = row['audio_url']
-    st.audio(audio_url)
+# Display the table using Streamlit
+st.markdown(table, unsafe_allow_html=True)
 
 #############################################################################################################################
 # Styling the text
