@@ -170,6 +170,7 @@ st.markdown("""
 ###########################################################################################################################
 import streamlit as st
 import os
+import pandas as pd
 
 # Path to the folder containing your audio files
 audio_folder_path = "path/to/your/audio/files"  # Update with your folder path
@@ -180,17 +181,28 @@ mp3_files = [f for f in os.listdir(audio_folder_path) if f.endswith('.mp3')]
 # Display a title for your app
 st.title('Quran Audio MP3 Player')
 
-# Loop through each file and create a player for it
+# Create a DataFrame to hold file names and corresponding paths
+audio_data = []
+
 for audio_file in mp3_files:
-    # Generate the full path of the audio file
     audio_path = os.path.join(audio_folder_path, audio_file)
+    audio_data.append({"Surah Name": audio_file, "Audio File": audio_path})
 
-    # Display the filename as the header
-    st.header(audio_file)
+# Convert the list into a pandas DataFrame
+df = pd.DataFrame(audio_data)
 
-    # Add audio player for each MP3 file
-    audio_file_obj = open(audio_path, 'rb')
-    st.audio(audio_file_obj.read(), format="audio/mp3")
+# Display the table
+st.table(df[['Surah Name']])
+
+# Add an audio player button for each file
+for audio_file in mp3_files:
+    audio_path = os.path.join(audio_folder_path, audio_file)
+    
+    # Show the button for each file
+    if st.button(f"Play {audio_file}"):
+        audio_file_obj = open(audio_path, 'rb')
+        st.audio(audio_file_obj.read(), format="audio/mp3")
+
 
 #############################################################################################################################
 # Styling the text
