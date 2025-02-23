@@ -28,13 +28,9 @@ header_css = """
 st.markdown(header_css, unsafe_allow_html=True)
 
 # Header with border and height
-st.markdown('<div class="header">Quran MP3 Player</div>', unsafe_allow_html=True)
+st.markdown('<div class="header">Al-Quran-Al-Kareem-القرآن الکریم</div>', unsafe_allow_html=True)
 
-# Your Streamlit content here (audio players, tables, etc.)
-st.write("This app lets you play Quran audio MP3s.")
 
-# Footer with border and height
-st.markdown('<div class="footer">Powered by Your Name | <a href="https://github.com" target="_blank">GitHub</a></div>', unsafe_allow_html=True)
 
 #############################################################################################################################################
 # Custom CSS for scrollable container
@@ -370,15 +366,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Footer section
-st.markdown(
-    """
-    <footer style="text-align: center; font-size: 14px;">
-        <p>Powered by <a href="https://github.com" target="_blank">Mohammed Umar</a></p>
-    </footer>
-    """, 
-    unsafe_allow_html=True
-)
+# Footer with border and height
+st.markdown('<div class="footer">Powered by Mohammed Umar | <a href="https://github.com" target="_blank">GitHub</a></div>', unsafe_allow_html=True)
 
 
 st.markdown('</div>', unsafe_allow_html=True)
