@@ -1,6 +1,42 @@
 import streamlit as st
 import pandas as pd
+#############################################################################################################################
+# Custom CSS for header and footer with border lines
+header_css = """
+    <style>
+        .header {
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 3px solid black;
+            height: 1cm;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 12px;
+            border-top: 3px solid black;
+            height: 1cm;
+            margin-top: 20px;
+        }
+    </style>
+"""
+# Inject custom CSS into the page
+st.markdown(header_css, unsafe_allow_html=True)
 
+# Header with border and height
+st.markdown('<div class="header">Quran MP3 Player</div>', unsafe_allow_html=True)
+
+# Your Streamlit content here (audio players, tables, etc.)
+st.write("This app lets you play Quran audio MP3s.")
+
+# Footer with border and height
+st.markdown('<div class="footer">Powered by Your Name | <a href="https://github.com" target="_blank">GitHub</a></div>', unsafe_allow_html=True)
+
+#############################################################################################################################################
 # Custom CSS for scrollable container
 st.markdown("""
     <style>
