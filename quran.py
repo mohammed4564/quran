@@ -46,16 +46,21 @@ st.markdown("""
             font-weight: bold;
             margin-bottom: 30px;
         }
+        .table {
+            width: 100%;
+            border-collapse: collapse;  /* Ensures borders don't overlap */
+        }
         .table th, .table td {
-            padding: 12px;
-            text-align: center;
-            border: 1px solid #ddd;
+            padding: 15px;  /* Adds space inside cells */
+            text-align: center;  /* Centers the text */
+            border: 1px solid #ddd;  /* Light grey border */
             font-size: 14px;
         }
         .table th {
-            color: #333;
+            color: #333;  /* Dark text for readability */
             font-weight: bold;
             font-size: 16px;
+            background-color: #f4f4f4;  /* Light grey background for the header */
         }
         .table tr:nth-child(even) {
             background-color: #f9f9f9;
@@ -64,36 +69,27 @@ st.markdown("""
             background-color: #e9f7ef;
         }
         .table tr:hover {
-            background-color: #ddd;
+            background-color: #ddd;  /* Add hover effect to rows */
         }
         .download-btn {
             color: white;
             padding: 10px;
-            border: 1px solid #ddd; /* Border around button */
+            border: 1px solid #007BFF;
             cursor: pointer;
             border-radius: 5px;
-            background-color: transparent; /* Remove background color */
             text-decoration: none;
+            background-color: #007BFF;  /* Blue background for the button */
         }
         .download-btn:hover {
-            background-color: #ddd; /* Add hover effect */
+            background-color: #0056b3;  /* Darker blue on hover */
         }
         .para-name {
-            color: #333;
+            color: #333;  /* Text color for Para names */
             font-weight: bold;
         }
         .pdf-icon {
             font-size: 20px;
-            color: #007BFF;
-        }
-        .blue-text {
-            color: #007BFF;
-            font-weight: bold;
-        }
-
-        /* Consistent column widths for all columns */
-        .table th, .table td {
-            width: 33%; /* Ensure equal width for each column */
+            color: #007BFF;  /* Blue color for icons */
         }
     </style>
 """, unsafe_allow_html=True)
@@ -178,6 +174,7 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
+
 
 
 # Styling the text
