@@ -168,7 +168,6 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 ###########################################################################################################################
-
 import streamlit as st
 import pandas as pd
 
@@ -213,7 +212,20 @@ df = pd.DataFrame(data)
 
 # Display the DataFrame as a table in Streamlit
 st.title("Quran Audio Table")
-st.write(df)
+
+# Loop to display each row with a play button
+for index, row in df.iterrows():
+    surah_name = row['Surah Name']
+    mp3_file = row['Audio']
+    
+    # Display the row
+    st.write(f"{row['Sl. No']}. {surah_name}")
+
+    # Add play button for each audio file
+    if st.button(f"Play {surah_name}"):
+        st.audio(mp3_file)
+
+    st.write("")  # Adding space between each row for better readability
 
 #############################################################################################################################
 # Styling the text
