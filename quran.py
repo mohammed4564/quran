@@ -146,6 +146,7 @@ st.markdown("""
     <table class="table">
         <thead>
             <tr>
+                <th>Sl. No.</th>
                 <th>Para</th>
                 <th>PDF Download</th>
             </tr>
@@ -153,13 +154,15 @@ st.markdown("""
         <tbody>
 """, unsafe_allow_html=True)
 
-# Populate the table with the Quran Para data
+# Populate the table with the Quran Para data and serial numbers
 for index, row in df.iterrows():
     para_name = row['name']
     pdf_url = f"{github_repo_url}{row['file']}"
+    sl_no = index + 1  # To create Sl. No. starting from 1
     
     st.markdown(f"""
         <tr>
+            <td>{sl_no}</td>
             <td class="para-name">{para_name} ({row['arabic_name']})</td>
             <td><a href="{pdf_url}" target="_blank" class="download-btn">Download PDF</a></td>
         </tr>
@@ -172,6 +175,7 @@ st.markdown("""
 
 # Close scrollable container
 st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 # # Styling the text
