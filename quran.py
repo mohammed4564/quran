@@ -85,6 +85,7 @@ st.markdown("""
             display: inline-block;  /* To make the button appear as an inline element */
             width: 100%;  /* Ensure the download button takes full width of its cell */
             box-sizing: border-box;  /* Include padding in width */
+            text-align: center;
         }
         .download-btn:hover {
             background-color: #0056b3;
