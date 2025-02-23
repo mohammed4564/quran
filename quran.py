@@ -169,24 +169,27 @@ st.markdown("""
 """, unsafe_allow_html=True)
 ###########################################################################################################################
 import streamlit as st
-import os
 import pandas as pd
 
-# Path to the folder containing your audio files
-audio_folder_path = "quran_audio_folder/abdul-rahman-al-sudais-001-qurancentral.com-192 (1).mp3"  # Update with your folder path
+# GitHub repository information
+github_repo_url = "https://raw.githubusercontent.com/yourusername/your-repository/main/quran_audio_folder/"
 
-# List all the MP3 files in the directory
-mp3_files = [f for f in os.listdir(audio_folder_path) if f.endswith('.mp3')]
+# List of MP3 files you want to display (update this to match your MP3 file names)
+mp3_files = [
+    "001-al-fatihah.mp3", "002-al-baqarah.mp3", "003-al-imran.mp3", "004-an-nisa.mp3",
+    "005-al-maidah.mp3", "006-al-anam.mp3", "007-al-araf.mp3", "008-al-anfal.mp3",
+    # Add the rest of your MP3 files here...
+]
 
 # Display a title for your app
 st.title('Quran Audio MP3 Player')
 
-# Create a DataFrame to hold file names and corresponding paths
+# Create a DataFrame to hold file names and corresponding URLs
 audio_data = []
 
 for audio_file in mp3_files:
-    audio_path = os.path.join(audio_folder_path, audio_file)
-    audio_data.append({"Surah Name": audio_file, "Audio File": audio_path})
+    audio_url = github_repo_url + audio_file
+    audio_data.append({"Surah Name": audio_file, "Audio File": audio_url})
 
 # Convert the list into a pandas DataFrame
 df = pd.DataFrame(audio_data)
@@ -196,12 +199,12 @@ st.table(df[['Surah Name']])
 
 # Add an audio player button for each file
 for audio_file in mp3_files:
-    audio_path = os.path.join(audio_folder_path, audio_file)
+    audio_url = github_repo_url + audio_file
     
     # Show the button for each file
     if st.button(f"Play {audio_file}"):
-        audio_file_obj = open(audio_path, 'rb')
-        st.audio(audio_file_obj.read(), format="audio/mp3")
+        st.audio(audio_url, format="audio/mp3")
+
 
 
 #############################################################################################################################
