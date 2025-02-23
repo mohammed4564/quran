@@ -17,9 +17,9 @@ header_css = """
             background-color: #f1f1f1;
             padding: 10px 0;
             text-align: center;
-            font-size: 12px;
+            font-size: 18px;
             border-top: 3px solid black;
-            height: 1cm;
+            height: 2cm;
             margin-top: 20px;
         }
     </style>
