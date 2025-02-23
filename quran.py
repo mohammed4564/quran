@@ -169,43 +169,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 ###########################################################################################################################
 
-import streamlit as st
-import pandas as pd
 
-# GitHub repository information
-github_repo_url = "https://raw.githubusercontent.com/yourusername/your-repository/main/quran_audio_folder/"
+# Specify the URL of your audio file
+audio_file_url = "https://your_audio_storage.com/quran_audio_folder/001-al-fatihah.mp3"
 
-# List of MP3 files you want to display (update this to match your MP3 file names)
-mp3_files = [
-    "001-al-fatihah.mp3", "002-al-baqarah.mp3", "003-al-imran.mp3", "004-an-nisa.mp3",
-    "005-al-maidah.mp3", "006-al-anam.mp3", "007-al-araf.mp3", "008-al-anfal.mp3",
-    # Add the rest of your MP3 files here...
-]
-
-# Display a title for your app
-st.title('Quran Audio MP3 Player')
-
-# Create a DataFrame to hold file names and corresponding URLs
-audio_data = []
-
-# Add the URL for each MP3 file
-for audio_file in mp3_files:
-    audio_url = github_repo_url + audio_file
-    audio_data.append({"Surah Name": audio_file, "Audio File": audio_url})
-
-# Convert the list into a pandas DataFrame
-df = pd.DataFrame(audio_data)
-
-# Display the DataFrame as a table
-st.table(df[['Surah Name']])
-
-# Add play button and audio for each MP3 file
-for index, row in df.iterrows():
-    # Display the play button for each MP3 file
-    if st.button(f"Play {row['Surah Name']}"):
-        st.audio(row["Audio File"], format="audio/mp3")
-
-
+# Display the audio player in Streamlit
+st.audio(audio_file_url)
 
 
 #############################################################################################################################
