@@ -94,7 +94,7 @@ st.markdown("""
             padding: 12px;
             text-align: center;
             border: 1px solid #ddd;
-            min-width: 240px;  /* Ensure columns have a fixed minimum width */
+            min-width: 250px;  /* Ensure columns have a fixed minimum width */
         }
         th {
             background-color: #f4f4f4;
@@ -123,7 +123,7 @@ st.markdown("""
 
         /* Reduce the width of the Sl. No. column */
         td:first-child, th:first-child {
-            min-width: 60px;  /* Reduce width of the first column (Sl. No.) */
+            min-width: 70px;  /* Reduce width of the first column (Sl. No.) */
         }
     </style>
     <table>
