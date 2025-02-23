@@ -17,7 +17,7 @@ st.markdown('<div class="scrollable-container">', unsafe_allow_html=True)
 # Add a Beautiful Title and Heading
 st.markdown("""
     <h1 style="text-align: center; color: #2980b9; font-family: 'Arial', sans-serif; font-size: 36px; font-weight: bold;">
-        The Eternal Wisdom of the Quran
+        The Everlasting Wisdom of the Quran: A Guide to Truth and Light
     </h1>
     <h3 style="text-align: center; color: #34495e; font-family: 'Arial', sans-serif; font-size: 24px;">
         A Divine Guide for All of Humanity
