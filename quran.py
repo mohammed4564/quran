@@ -184,7 +184,7 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-CSS to center-align the table and apply some styling
+#CSS to center-align the table and apply some styling
 st.markdown("""
     <style>
         table {
