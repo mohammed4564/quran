@@ -36,7 +36,6 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
-
 import streamlit as st
 import pandas as pd
 
@@ -84,8 +83,9 @@ df = pd.DataFrame(pdf_files)
 st.markdown("""
     <style>
         table {
-            width: 100%;
+            width: 80%;  /* Adjust table width to make it narrower */
             border-collapse: collapse;
+            margin-left: 20px;  /* Move the table to the right */
         }
         th, td {
             padding: 12px;
@@ -134,6 +134,7 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
+
 
 
 
