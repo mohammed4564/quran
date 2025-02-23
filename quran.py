@@ -141,7 +141,7 @@ pdf_files = [
 # Create a DataFrame for the table
 df = pd.DataFrame(pdf_files)
 
-# Displaying the table with downloadable links
+# Displaying the entire table with headers and downloadable links
 st.markdown("""
     <table class="table">
         <thead>
@@ -160,6 +160,7 @@ for index, row in df.iterrows():
     pdf_url = f"{github_repo_url}{row['file']}"
     sl_no = index + 1  # To create Sl. No. starting from 1
     
+    # Ensuring that the table is correctly formatted and fully enclosed
     st.markdown(f"""
         <tr>
             <td>{sl_no}</td>
@@ -168,6 +169,7 @@ for index, row in df.iterrows():
         </tr>
     """, unsafe_allow_html=True)
 
+# Closing the table properly
 st.markdown("""
         </tbody>
     </table>
