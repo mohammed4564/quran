@@ -147,14 +147,11 @@ df = pd.DataFrame(pdf_files)
 # Display the table in a single HTML table structure
 st.markdown("""
     <table class="table">
-        <thead>
-            <tr>
-                <th>Sl. No.</th>
-                <th>Para</th>
-                <th>PDF Download</th>
-            </tr>
-        </thead>
-        <tbody>
+        <tr>
+            <th>Sl. No.</th>
+            <th>Para</th>
+            <th>PDF Download</th>
+        </tr>
 """, unsafe_allow_html=True)
 
 # Populate the table with the Quran Para data and serial numbers
@@ -174,7 +171,6 @@ for index, row in df.iterrows():
 
 # Closing the table properly
 st.markdown("""
-        </tbody>
     </table>
 """, unsafe_allow_html=True)
 
