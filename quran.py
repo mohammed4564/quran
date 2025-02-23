@@ -37,6 +37,8 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
+import streamlit as st
+import pandas as pd
 
 # GitHub repository URL for the raw files
 github_repo_url = 'https://raw.githubusercontent.com/mohammed4564/quran/main/.devcontainer/'
@@ -80,12 +82,29 @@ df = pd.DataFrame(pdf_files)
 
 # Table structure in markdown with header row
 st.markdown("""
-    <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+    <table>
         <thead>
             <tr>
-                <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Sl. No.</th>
-                <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Para Name</th>
-                <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Download PDF</th>
+                <th>Sl. No.</th>
+                <th>Para Name</th>
+                <th>Download PDF</th>
             </tr>
         </thead>
         <tbody>
@@ -100,11 +119,9 @@ for index, row in df.iterrows():
     # Adding rows to the table
     st.markdown(f"""
         <tr>
-            <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">{sl_no}</td>
-            <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">{para_name} ({row['arabic_name']})</td>
-            <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
-                <a href="{pdf_url}" target="_blank" style="background-color: #007BFF; color: white; padding: 10px; text-decoration: none; border-radius: 5px;">Download PDF</a>
-            </td>
+            <td>{sl_no}</td>
+            <td>{para_name} ({row['arabic_name']})</td>
+            <td><a href="{pdf_url}" target="_blank" style="background-color: #007BFF; color: white; padding: 10px; text-decoration: none; border-radius: 5px;">Download PDF</a></td>
         </tr>
     """, unsafe_allow_html=True)
 
