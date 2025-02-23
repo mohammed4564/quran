@@ -91,8 +91,10 @@ st.markdown("""
             table-layout: fixed;  /* Ensures equal column widths */
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
+            text-align: center;
             border: 1px solid #ddd;
+            min-width: 180px;  /* Ensure columns have a fixed minimum width */
         }
         th {
             background-color: #f4f4f4;
