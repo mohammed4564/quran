@@ -40,7 +40,7 @@ st.markdown("""
 # Styling the text
 st.markdown("""
     <p style="font-size: 24px; font-weight: bold; color: #27ae60; text-align: center;">
-        Downloads <span style="color: #8e44ad;">And</span> Read <span style="color: #f39c12;">quran</span>
+        Download <span style="color: #8e44ad;">And</span> Read <span style="color: #f39c12;">quran</span>
     </p>
 """, unsafe_allow_html=True)
 
