@@ -36,6 +36,7 @@ st.markdown("""
         offering timeless wisdom for those who seek peace, clarity, and righteousness in their lives.
     </p>
 """, unsafe_allow_html=True)
+
 import streamlit as st
 import pandas as pd
 
@@ -83,13 +84,14 @@ df = pd.DataFrame(pdf_files)
 st.markdown("""
     <style>
         table {
-            width: 80%;  /* Adjust table width to make it narrower */
+            width: 80%;  /* Adjust table width */
             border-collapse: collapse;
             margin-left: 20px;  /* Move the table to the right */
+            margin-bottom: 20px;  /* Add space below the table */
         }
         th, td {
             padding: 12px;
-            text-align: left;
+            text-align: center;
             border: 1px solid #ddd;
             min-width: 150px; /* Ensuring enough space for content */
         }
@@ -101,6 +103,22 @@ st.markdown("""
         }
         tr:nth-child(odd) {
             background-color: #e9f7ef;
+        }
+        .download-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+        .pdf-icon {
+            margin-right: 10px; /* Space between icon and text */
         }
     </style>
     <table>
@@ -120,12 +138,16 @@ for index, row in df.iterrows():
     pdf_url = f"{github_repo_url}{row['file']}"
     sl_no = index + 1  # Sl. No. starting from 1
 
-    # Adding rows to the table
+    # Adding rows to the table with PDF icon
     st.markdown(f"""
         <tr>
             <td>{sl_no}</td>
             <td>{para_name} ({row['arabic_name']})</td>
-            <td><a href="{pdf_url}" target="_blank" style="background-color: #007BFF; color: white; padding: 10px; text-decoration: none; border-radius: 5px;">Download PDF</a></td>
+            <td>
+                <a href="{pdf_url}" target="_blank" class="download-btn">
+                    <i class="fas fa-file-pdf pdf-icon"></i> Download PDF
+                </a>
+            </td>
         </tr>
     """, unsafe_allow_html=True)
 
