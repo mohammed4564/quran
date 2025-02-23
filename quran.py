@@ -37,7 +37,6 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
-
 import streamlit as st
 import pandas as pd
 
@@ -81,16 +80,9 @@ pdf_files = [
 # Create a DataFrame for the table
 df = pd.DataFrame(pdf_files)
 
-# Table structure in markdown
+# Table structure in markdown (without headings)
 st.markdown("""
     <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
-        <thead>
-            <tr>
-                <th style="padding: 10px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Sl. No.</th>
-                <th style="padding: 10px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Para</th>
-                <th style="padding: 10px; text-align: center; border: 1px solid #ddd; background-color: #f4f4f4;">Download PDF</th>
-            </tr>
-        </thead>
         <tbody>
 """, unsafe_allow_html=True)
 
@@ -116,6 +108,7 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
+
 
 
 
