@@ -169,7 +169,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 ###########################################################################################################################
 
-
 import streamlit as st
 import pandas as pd
 
@@ -189,20 +188,23 @@ st.title('Quran Audio MP3 Player')
 # Create a DataFrame to hold file names and corresponding URLs
 audio_data = []
 
-# Add the URL and button to play each file
+# Add the URL for each MP3 file
 for audio_file in mp3_files:
     audio_url = github_repo_url + audio_file
-    audio_data.append({"Surah Name": audio_file, "Audio File": audio_url, "Play": audio_url})
+    audio_data.append({"Surah Name": audio_file, "Audio File": audio_url})
 
 # Convert the list into a pandas DataFrame
 df = pd.DataFrame(audio_data)
 
-# Display the DataFrame with Play buttons
-def play_button(row):
-    return st.audio(row["Audio File"], format="audio/mp3")
+# Display the DataFrame as a table
+st.table(df[['Surah Name']])
 
-# Display the table and add the Play buttons inline
-st.dataframe(df[['Surah Name', 'Play']].style.applymap(play_button))
+# Add play button and audio for each MP3 file
+for index, row in df.iterrows():
+    # Display the play button for each MP3 file
+    if st.button(f"Play {row['Surah Name']}"):
+        st.audio(row["Audio File"], format="audio/mp3")
+
 
 
 
