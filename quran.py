@@ -37,6 +37,7 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
+
 # Adding custom CSS for styling the app
 st.markdown("""
     <style>
@@ -141,7 +142,7 @@ pdf_files = [
 # Create a DataFrame for the table
 df = pd.DataFrame(pdf_files)
 
-# Displaying the entire table with headers and downloadable links
+# Display the table in a single HTML table structure
 st.markdown("""
     <table class="table">
         <thead>
@@ -158,9 +159,9 @@ st.markdown("""
 for index, row in df.iterrows():
     para_name = row['name']
     pdf_url = f"{github_repo_url}{row['file']}"
-    sl_no = index + 1  # To create Sl. No. starting from 1
+    sl_no = index + 1  # Sl. No. starting from 1
     
-    # Ensuring that the table is correctly formatted and fully enclosed
+    # Table rows populated with Sl. No., Para name, and PDF link
     st.markdown(f"""
         <tr>
             <td>{sl_no}</td>
@@ -174,9 +175,6 @@ st.markdown("""
         </tbody>
     </table>
 """, unsafe_allow_html=True)
-
-# Close scrollable container
-st.markdown('</div>', unsafe_allow_html=True)
 
 
 
