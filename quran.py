@@ -200,13 +200,8 @@ st.markdown("""
     </table>
 """, unsafe_allow_html=True)
 ###########################################################################################################################
-
-
-# Provide the correct path or URL to your audio file
-audio_file_path = "quran_audio_folder/001-al-fatihah.mp3"
-
 # Display the audio player in Streamlit
-st.audio(audio_file_path, format="audio/mp3")
+st.audio( "quran_audio_folder/001-al-fatihah.mp3", format="audio/mp3")
 
 
 #############################################################################################################################
