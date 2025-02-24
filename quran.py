@@ -202,6 +202,17 @@ st.markdown("""
 ###########################################################################################################################
 # Display the audio player in Streamlit
 st.audio( "quran_audio_folder/001-al-fatihah.mp3", format="audio/mp3")
+st.audio( "002-al-baqarah.mp3", format="audio/mp3")
+st.audio( "003-al-imran.mp3", format="audio/mp3")
+st.audio( "004-an-nisa.mp3", format="audio/mp3")
+st.audio( "005-al-maidah.mp3", format="audio/mp3")
+st.audio( "006-al-anam.mp3", format="audio/mp3")
+st.audio( "007-al-araf.mp3", format="audio/mp3")
+st.audio( "008-al-anfal.mp3", format="audio/mp3")
+st.audio( "009-at-taubah.mp3", format="audio/mp3")
+st.audio( "010-yunus.mp3", format="audio/mp3")
+
+
 
 
 #############################################################################################################################
