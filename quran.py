@@ -201,7 +201,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 ###########################################################################################################################
 # Display the audio player in Streamlit
-st.audio( "quran_audio_folder/001-al-fatihah.mp3", format="audio/mp3"
+st.audio( "quran_audio_folder/001-al-fatihah.mp3", format="audio/mp3")
 
 
 
